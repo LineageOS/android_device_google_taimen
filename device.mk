@@ -19,6 +19,7 @@ PRODUCT_AAPT_PREF_CONFIG := 560dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_HARDWARE := taimen
+TARGET_PREBUILT_KERNEL := device/google/taimen-kernel/Image.gz-dtb
 
 include device/qcom/msmcobalt/device-common.mk
 
