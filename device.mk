@@ -22,6 +22,7 @@ PRODUCT_HARDWARE := taimen
 TARGET_PREBUILT_KERNEL := device/google/taimen-kernel/Image.gz-dtb
 
 include device/qcom/msmcobalt/device-common.mk
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
