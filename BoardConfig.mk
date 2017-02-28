@@ -18,3 +18,5 @@ TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x00000056
 
 include device/qcom/msmcobalt/CommonBoardConfig.mk
+
+-include vendor/google_devices/taimen/BoardConfigVendor.mk
