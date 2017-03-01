@@ -27,6 +27,10 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
+# camera service treble disable for bringup
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true
+
 # Thermal packages
 PRODUCT_PACKAGES += \
     thermal.default
