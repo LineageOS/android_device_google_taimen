@@ -21,4 +21,8 @@ BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 earlycon=msm_serial_dm,0xc1b00
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 include device/google/wahoo/BoardConfig.mk
+
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
+BOARD_AVB_ENABLE := true
+
 -include vendor/google_devices/taimen/BoardConfigVendor.mk
