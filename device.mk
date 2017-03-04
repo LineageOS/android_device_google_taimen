@@ -21,8 +21,11 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_HARDWARE := taimen
 TARGET_PREBUILT_KERNEL := device/google/taimen-kernel/Image.gz-dtb
 
-include device/qcom/msmcobalt/device-common.mk
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
+include device/google/wahoo/device.mk
+
+# Until taimen supports encryption, need an fstab without encryption
+PRODUCT_COPY_FILES += \
+    device/google/taimen/fstab.hardware:root/fstab.$(PRODUCT_HARDWARE) \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
@@ -30,8 +33,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # camera service treble disable for bringup
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
-
-# Thermal packages
-PRODUCT_PACKAGES += \
-    thermal.default
 

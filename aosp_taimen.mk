@@ -29,9 +29,7 @@ PRODUCT_MODEL := AOSP on taimen
 PRODUCT_MANUFACTURER := Google
 PRODUCT_RESTRICT_VENDOR_FILES := all
 
-$(call inherit-product, device/qcom/msmcobalt/utils.mk)
 $(call inherit-product, device/google/taimen/device.mk)
-$(call inherit-product-if-exists, vendor/qcom/msmcobalt/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/taimen/device-vendor.mk)
 
 PRODUCT_PACKAGES += \
