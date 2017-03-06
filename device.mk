@@ -23,10 +23,6 @@ TARGET_PREBUILT_KERNEL := device/google/taimen-kernel/Image.gz-dtb
 
 include device/google/wahoo/device.mk
 
-# Until taimen supports encryption, need an fstab without encryption
-PRODUCT_COPY_FILES += \
-    device/google/taimen/fstab.hardware:root/fstab.$(PRODUCT_HARDWARE) \
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
