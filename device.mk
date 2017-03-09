@@ -23,6 +23,9 @@ TARGET_PREBUILT_KERNEL := device/google/taimen-kernel/Image.gz-dtb
 
 include device/google/wahoo/device.mk
 
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init-taimen.rc:system/etc/init/init-taimen.rc
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
