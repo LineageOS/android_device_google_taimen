@@ -1,0 +1,2 @@
+on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
+    stop fps_hal
