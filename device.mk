@@ -37,3 +37,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/audio_platform_info_tavil.xml:system/etc/audio_platform_info_tavil_taimen.xml \
     device/google/taimen/mixer_paths_tavil.xml:system/etc/mixer_paths_tavil_taimen.xml
+
+# Logging
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
+
+# Dumpstate HAL
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.0-service.taimen
+
+
