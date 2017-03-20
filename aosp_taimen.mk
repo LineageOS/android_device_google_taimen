@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     WallpaperPicker
 
-PRODUCT_RESTRICT_VENDOR_FILES := all
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_taimen
