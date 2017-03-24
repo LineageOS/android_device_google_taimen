@@ -23,7 +23,8 @@ PRODUCT_HARDWARE := taimen
 include device/google/wahoo/device.mk
 
 PRODUCT_COPY_FILES += \
-    device/google/taimen/init-taimen.rc:system/etc/init/init-taimen.rc
+    device/google/taimen/init-taimen.rc:system/etc/init/init-taimen.rc \
+    device/google/taimen/init.taimen.usb.rc:root/init.taimen.usb.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
