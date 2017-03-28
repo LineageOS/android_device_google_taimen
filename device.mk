@@ -29,6 +29,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
+# Kernel modules
+PRODUCT_COPY_FILES += \
+    device/google/wahoo-kernel/touch_core_base.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/touch_core_base.ko \
+    device/google/wahoo-kernel/ftm4.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/ftm4.ko \
+    device/google/wahoo-kernel/sw49408.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/sw49408.ko
+
 # Logging
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
