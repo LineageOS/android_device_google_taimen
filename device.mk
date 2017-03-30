@@ -33,11 +33,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true
 
-# Audio
-PRODUCT_COPY_FILES += \
-    device/google/taimen/audio_platform_info_tavil.xml:system/etc/audio_platform_info_tavil_taimen.xml \
-    device/google/taimen/mixer_paths_tavil.xml:system/etc/mixer_paths_tavil_taimen.xml
-
 # Logging
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
