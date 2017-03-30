@@ -42,9 +42,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
 
-# Dumpstate HAL
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.0-service.taimen
 
 PRODUCT_COPY_FILES += \
     device/google/taimen/nfc/libnfc-nxp.taimen.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
