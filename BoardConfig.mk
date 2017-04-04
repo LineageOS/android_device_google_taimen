@@ -22,4 +22,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 TARGET_RECOVERY_FSTAB := device/google/taimen/fstab.hardware
 include device/google/wahoo/BoardConfig.mk
+
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
+BOARD_AVB_ENABLE := true
+
 -include vendor/google_devices/taimen/BoardConfigVendor.mk
