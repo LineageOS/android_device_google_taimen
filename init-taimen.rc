@@ -6,9 +6,6 @@ on post-fs-data
     chmod 664 /persist/sensors/sensors_settings
     chown system root /persist/sensors/sensors_settings
 
-    # Update touch firmware if required
-    write /sys/devices/virtual/input/ftm4_touch/check_fw 1
-
 on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
     stop fps_hal
 
@@ -17,3 +14,6 @@ on boot
     insmod /vendor/lib/modules/touch_core_base.ko
     insmod /vendor/lib/modules/ftm4.ko
     insmod /vendor/lib/modules/sw49408.ko
+
+    # Update touch firmware if required
+    write /sys/devices/virtual/input/ftm4_touch/check_fw 1
