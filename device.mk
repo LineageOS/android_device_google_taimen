@@ -29,10 +29,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
-# camera service treble disable for bringup
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera.disable_treble=true
-
 # Logging
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
