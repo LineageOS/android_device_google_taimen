@@ -27,6 +27,9 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     WallpaperPicker
 
+PRODUCT_COPY_FILES += \
+    device/google/taimen/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_taimen
