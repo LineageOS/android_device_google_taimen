@@ -53,3 +53,13 @@ PRODUCT_COPY_FILES += \
 # verity
 AB_OTA_PARTITIONS += \
     vbmeta
+
+# generic gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
+
+# generic keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
