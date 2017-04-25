@@ -20,6 +20,14 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_HARDWARE := taimen
 
+# DEVICE_PACKAGE_OVERLAYS for the device should be before
+# including common overlays since the one listed first
+# takes precedence.
+ifdef DEVICE_PACKAGE_OVERLAYS
+$(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PRODUCT_HARDWARE)' overlays)
+endif
+DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay
+
 include device/google/wahoo/device.mk
 
 PRODUCT_COPY_FILES += \
