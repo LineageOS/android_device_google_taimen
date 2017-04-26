@@ -1,3 +1,7 @@
+on init && property:ro.boot.slot=*
+    # will remove this once slot_suffix is deprecated
+    setprop ro.boot.slot_suffix _${ro.boot.slot}
+
 on post-fs-data
     # QC Sensors
     mkdir /persist/sensors
