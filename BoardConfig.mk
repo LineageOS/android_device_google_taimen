@@ -26,4 +26,4 @@ include device/google/wahoo/BoardConfig.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
--include vendor/google_devices/taimen/BoardConfigVendor.mk
+-include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk

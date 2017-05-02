@@ -59,6 +59,12 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     device/google/taimen/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
+# Audio
+PRODUCT_COPY_FILES += \
+    device/google/taimen/mixer_paths_tavil.xml:system/etc/mixer_paths_tavil_taimen.xml \
+    device/google/taimen/audio_platform_info_tavil.xml:system/etc/audio_platform_info_tavil_taimen.xml
+
 # verity
 AB_OTA_PARTITIONS += \
     vbmeta
+
