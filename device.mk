@@ -37,6 +37,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
+# Kernel Modules Config
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+
 # Kernel modules
 PRODUCT_COPY_FILES += \
     device/google/wahoo-kernel/touch_core_base.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/touch_core_base.ko \

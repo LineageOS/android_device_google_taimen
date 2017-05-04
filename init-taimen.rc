@@ -13,11 +13,6 @@ on post-fs-data
 on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
     stop fps_hal
 
-on boot
-    # Touch drivers
-    insmod /vendor/lib/modules/touch_core_base.ko
-    insmod /vendor/lib/modules/ftm4.ko
-    insmod /vendor/lib/modules/sw49408.ko
-
+on property:sys.all.modules.ready=1
     # Update touch firmware if required
     write /sys/devices/virtual/input/ftm4_touch/check_fw 1
