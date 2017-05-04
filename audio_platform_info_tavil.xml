@@ -48,7 +48,7 @@
         <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19" />
     </pcm_ids>
     <config_params>
-        <param key="input_mic_max_count" value="4"/>
+        <param key="input_mic_max_count" value="3"/>
         <param key="snd_card_name" value="msm8998-tavil-taimen-snd-card"/>
     </config_params>
     <backend_names>
