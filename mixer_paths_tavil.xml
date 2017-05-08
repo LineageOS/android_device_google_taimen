@@ -1311,6 +1311,14 @@
     </path>
 
     <!-- FluenceProv2 voice call SPK for taimen -->
+    <path name="voice-speaker-tmic">
+        <path name="triple-mic" />
+        <ctl name="DEC5 Volume" value="100" />
+        <ctl name="DEC6 Volume" value="100" />
+        <ctl name="DEC7 Volume" value="100" />
+    </path>
+
+    <!-- FluenceProv2 voice call SPK for taimen -->
     <path name="voice-speaker-qmic">
         <path name="triple-mic" />
         <ctl name="DEC5 Volume" value="100" />
