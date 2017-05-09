@@ -49,10 +49,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/nfc/libnfc-nxp.taimen.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
-# TODO: move this to wahoo.
-PRODUCT_COPY_FILES += \
-    device/google/taimen/fstab.hardware:root/fstab.$(PRODUCT_HARDWARE)
-
 PRODUCT_COPY_FILES += \
     device/google/taimen/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     device/google/taimen/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
