@@ -18,7 +18,6 @@ TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x00000056
 
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 earlycon=msm_serial_dm,0xc1b0000
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 include device/google/wahoo/BoardConfig.mk
 
