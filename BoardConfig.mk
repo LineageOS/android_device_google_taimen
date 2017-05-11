@@ -29,18 +29,21 @@ ifeq (,$(filter-out taimen_clang, $(TARGET_PRODUCT)))
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/clang/touch_core_base.ko \
     device/google/wahoo-kernel/clang/ftm4.ko \
-    device/google/wahoo-kernel/clang/sw49408.ko
+    device/google/wahoo-kernel/clang/sw49408.ko \
+    device/google/wahoo-kernel/clang/lge_battery.ko
 else ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_gcc
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/gcc/touch_core_base.ko \
     device/google/wahoo-kernel/gcc/ftm4.ko \
-    device/google/wahoo-kernel/gcc/sw49408.ko
+    device/google/wahoo-kernel/gcc/sw49408.ko \
+    device/google/wahoo-kernel/gcc/lge_battery.ko
 else
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/touch_core_base.ko \
     device/google/wahoo-kernel/ftm4.ko \
-    device/google/wahoo-kernel/sw49408.ko
+    device/google/wahoo-kernel/sw49408.ko \
+    device/google/wahoo-kernel/lge_battery.ko
 endif
 
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
