@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/mixer_paths_tavil.xml:system/etc/mixer_paths_tavil_taimen.xml \
     device/google/taimen/audio_platform_info_tavil.xml:system/etc/audio_platform_info_tavil_taimen.xml
 
+# Wifi configuration file
+PRODUCT_COPY_FILES += \
+    device/google/taimen/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
 # verity
 AB_OTA_PARTITIONS += \
     vbmeta
