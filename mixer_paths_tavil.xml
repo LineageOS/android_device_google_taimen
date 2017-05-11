@@ -780,12 +780,20 @@
         <path name="audio-ull-playback speaker" />
     </path>
 
-    <path name="multi-channel-playback display-port">
+    <path name="hifi-playback display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia2" value="1" />
     </path>
 
-    <path name="multi-channel-playback afe-proxy">
+    <path name="hifi-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
+
+    <path name="hifi-playback usb-headset">
+        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
+
+    <path name="hifi-playback usb-headphones">
+        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia2" value="1" />
     </path>
 
     <path name="compress-offload-playback">
