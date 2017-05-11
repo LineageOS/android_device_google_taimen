@@ -37,3 +37,6 @@ BOARD_VENDOR_KERNEL_MODULES += \
 endif
 
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
+
+# Testing related defines
+BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
