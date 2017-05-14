@@ -31,8 +31,8 @@ DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay
 include device/google/wahoo/device.mk
 
 PRODUCT_COPY_FILES += \
-    device/google/taimen/init-taimen.rc:system/etc/init/init-taimen.rc \
-    device/google/taimen/init.taimen.usb.rc:root/init.taimen.usb.rc
+    device/google/taimen/init-taimen.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-$(PRODUCT_HARDWARE).rc \
+    device/google/taimen/init.taimen.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).usb.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # Logging
 PRODUCT_COPY_FILES += \
-    device/google/taimen/init.logging.rc:root/init.$(PRODUCT_HARDWARE).logging.rc
+    device/google/taimen/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
 
 
 PRODUCT_COPY_FILES += \
