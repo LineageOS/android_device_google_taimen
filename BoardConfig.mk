@@ -40,3 +40,5 @@ endif
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
+
+BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/
