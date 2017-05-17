@@ -15,15 +15,30 @@
 #
 
 TARGET_BOOTLOADER_BOARD_NAME := taimen
-DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x00000056
+DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x000000ff
 
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 earlycon=msm_serial_dm,0xc1b0000
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-TARGET_RECOVERY_FSTAB := device/google/taimen/fstab.hardware
 include device/google/wahoo/BoardConfig.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
--include vendor/google_devices/taimen/BoardConfigVendor.mk
+ifeq (,$(filter taimen_clang, $(TARGET_PRODUCT)))
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/touch_core_base.ko \
+    device/google/wahoo-kernel/ftm4.ko \
+    device/google/wahoo-kernel/sw49408.ko
+else
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/clang/touch_core_base.ko \
+    device/google/wahoo-kernel/clang/ftm4.ko \
+    device/google/wahoo-kernel/clang/sw49408.ko
+endif
+
+-include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
+
+# Testing related defines
+BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
+
+BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/

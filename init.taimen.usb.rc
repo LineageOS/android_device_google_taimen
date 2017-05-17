@@ -1,1 +1,6 @@
-import init.wahoo.usb.rc
+#
+# The following import has been moved to /vendor/etc/init and will be
+# loaded by /init automatically, so is commented out to reduce the
+# noise in the log (and avoid redundancy).
+#
+#import init.wahoo.usb.rc

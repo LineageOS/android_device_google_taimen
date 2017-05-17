@@ -48,3 +48,7 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor)
 
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/product/taimen/vendor/etc/sensors/sensor_def_taimen.conf)
+
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/init/init-$(PRODUCT_HARDWARE).rc)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/root/init.$(PRODUCT_HARDWARE).usb.rc)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/root/init.$(PRODUCT_HARDWARE).logging.rc)

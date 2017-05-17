@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+   <!--Item not being relevant anymore:
+       bluetooth.active, bluetooth.on,
+       wifi.on, wifi.active, wifi.scan as they shoud be provided by WifiActivityEnergyInfo
+       dsp.audio, dsp.video
+  -->
+  <item name="cpu.idle">6</item>
+
+  <item name="cpu.awake">11</item>
+
+  <item name="gps.on">30</item>
+
+  <item name="radio.active">50</item>
+  <item name="radio.scanning">5</item>
+  <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+    <value>6</value>      <!-- none -->
+    <value>5</value>      <!-- poor -->
+    <value>4</value>      <!-- moderate -->
+    <value>3</value>      <!-- good -->
+    <value>3</value>      <!-- great -->
+  </array>
+
+  <item name="wifi.controller.voltage">0</item>
+
+  <array name="cpu.clusters.cores">
+    <value>4</value> <!-- Cluster 0 has 4 cores (cpu0, cpu1, cpu2, cpu3) -->
+    <value>4</value> <!-- Cluster 1 has 4 cores (cpu4, cpu5, cpu5, cpu7) -->
+  </array>
+
+  <!-- Different CPU speeds as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->
+  <array name="cpu.speeds.cluster0">
+    <value>300000</value>
+    <value>364800</value>
+    <value>441600</value>
+    <value>518400</value>
+    <value>595200</value>
+    <value>672000</value>
+    <value>748800</value>
+    <value>825600</value>
+    <value>883200</value>
+    <value>960000</value>
+    <value>1036800</value>
+    <value>1094400</value>
+    <value>1171200</value>
+    <value>1248000</value>
+    <value>1324800</value>
+    <value>1401600</value>
+    <value>1478400</value>
+    <value>1555200</value>
+    <value>1670400</value>
+    <value>1747200</value>
+    <value>1824000</value>
+    <value>1900800</value>
+  </array>
+
+  <array name="cpu.active.cluster0">
+    <value>125.927994</value>
+    <value>125.343994</value>
+    <value>126.192001</value>
+    <value>127.300003</value>
+    <value>128.143005</value>
+    <value>128.007004</value>
+    <value>126.160995</value>
+    <value>127.184006</value>
+    <value>128.455994</value>
+    <value>132.464005</value>
+    <value>133.457001</value>
+    <value>136.403000</value>
+    <value>138.167007</value>
+    <value>139.893005</value>
+    <value>141.796005</value>
+    <value>143.692001</value>
+    <value>146.570999</value>
+    <value>148.878006</value>
+    <value>153.154007</value>
+    <value>157.662994</value>
+    <value>160.550003</value>
+    <value>166.753006</value>
+  </array>
+
+  <!-- Different CPU speeds as reported in
+       /sys/devices/system/cpu/cpu4/cpufreq/stats/time_in_state -->
+  <array name="cpu.speeds.cluster1">
+    <value>300000</value>
+    <value>345600</value>
+    <value>422400</value>
+    <value>499200</value>
+    <value>576000</value>
+    <value>652800</value>
+    <value>729600</value>
+    <value>806400</value>
+    <value>902400</value>
+    <value>979200</value>
+    <value>1056000</value>
+    <value>1132800</value>
+    <value>1190400</value>
+    <value>1267200</value>
+    <value>1344000</value>
+    <value>1420800</value>
+    <value>1497600</value>
+    <value>1574400</value>
+    <value>1651200</value>
+    <value>1728000</value>
+    <value>1804800</value>
+    <value>1881600</value>
+    <value>1958400</value>
+    <value>2035200</value>
+    <value>2112000</value>
+    <value>2208000</value>
+    <value>2265600</value>
+    <value>2323200</value>
+    <value>2342400</value>
+    <value>2361600</value>
+    <value>2457600</value>
+  </array>
+
+  <array name="cpu.active.cluster1">
+    <value>135.47</value>
+    <value>134.93</value>
+    <value>137.16</value>
+    <value>140.10</value>
+    <value>143.30</value>
+    <value>146.59</value>
+    <value>139.80</value>
+    <value>137.54</value>
+    <value>139.42</value>
+    <value>140.58</value>
+    <value>142.38</value>
+    <value>143.40</value>
+    <value>167.40</value>
+    <value>159.51</value>
+    <value>175.65</value>
+    <value>181.65</value>
+    <value>187.83</value>
+    <value>195.19</value>
+    <value>201.31</value>
+    <value>208.11</value>
+    <value>218.77</value>
+    <value>230.67</value>
+    <value>238.13</value>
+    <value>258.11</value>
+    <value>270.27</value>
+    <value>296.85</value>
+    <value>311.92</value>
+    <value>336.86</value>
+    <value>343.08</value>
+    <value>351.30</value>
+    <value>352.63</value>
+  </array>
+  <item name="screen.on">165.68</item>
+  <item name="screen.full">135</item>
+  <item name="camera.flashlight">240.10</item>
+  <item name="camera.avg">870</item>
+  <item name="battery.capacity">3620</item>
+</device>
