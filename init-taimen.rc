@@ -2,6 +2,9 @@ on init && property:ro.boot.slot=*
     # will remove this once slot_suffix is deprecated
     setprop ro.boot.slot_suffix _${ro.boot.slot}
 
+on late-fs && property:ro.boot.revision=rev_a
+    start resetcalib_sh
+
 on post-fs-data
     # QC Sensors
     mkdir /persist/sensors
@@ -16,3 +19,10 @@ on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
 on property:sys.all.modules.ready=1
     # Update touch firmware if required
     write /sys/devices/virtual/input/ftm4_touch/check_fw 1
+
+service resetcalib_sh /vendor/bin/init.resetcalib.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot

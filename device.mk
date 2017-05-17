@@ -82,3 +82,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.config.calibration_cad=/vendor/etc/sensors/calibration_cad.xml \
   persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+
+# Temporary ALS/prox calibration reset
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init.resetcalib.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.resetcalib.sh

@@ -1,0 +1,2 @@
+# files in /vendor
+/vendor/bin/init\.resetcalib\.sh                                     u:object_r:init-resetcalib-sh_exec:s0
