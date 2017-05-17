@@ -1,0 +1,58 @@
+<rig>
+<device_id>0</device_id>
+<camera>
+    <camera_model name="feature_tracking_primary" index="0" type="calibu_fu_fv_u0_v0_k1_k2_k3" rolling_shutter_readout_time="0.016666667">
+        <width>640</width>
+        <height>480</height>
+        <params> [512.4374;  512.4374;  320.0;  240.0;  0.0;  0.0;  0.0] </params>
+    </camera_model>
+    <pose />
+</camera>
+<camera>
+    <camera_model name="color_primary" index="1" type="calibu_fu_fv_u0_v0_k1_k2_k3" rolling_shutter_readout_time="0.016666667">
+        <width>640</width>
+        <height>480</height>
+        <params> [512.4374;  512.4374;  320.0;  240.0;  0.0;  0.0;  0.0] </params>
+    </camera_model>
+    <pose />
+</camera>
+<camera>
+    <camera_model name="depth_ir_primary" index="3" type="calibu_fu_fv_u0_v0_k1_k2_k3" rolling_shutter_readout_time="0.016666667">
+        <width>640</width>
+        <height>480</height>
+        <params> [512.4374;  512.4374;  320.0;  240.0;  0.0;  0.0;  0.0] </params>
+    </camera_model>
+    <pose />
+</camera>
+<intrinsic_imu_calibration name="" imu_id="100" type="linear_imu_sg_mg_sa_ma_gqa">
+    <b_w_b_a> [0.0; 0.0;   0.0;   0.0;   0.0;   0.0] </b_w_b_a>
+    <intrinsics> [1; 1; 1; 0; 0; 0; 1; 1; 1; 0; 0; 0; 0; 0; 0; 1] </intrinsics>
+    <gyro_noise_sigma>5.3088444e-4</gyro_noise_sigma>
+    <gyro_bias_sigma>1.4125375e-4</gyro_bias_sigma>
+    <accel_noise_sigma>0.004883649</accel_noise_sigma>
+    <accel_bias_sigma>1.2589254e-2</accel_bias_sigma>
+</intrinsic_imu_calibration>
+<extrinsic_calibration name="imu_T_feature_tracking_primary" index="0" frame_A_id="100" frame_B_id="0">
+    <A_T_B> [1, 0, 0, -0.0394227;  0, -1, 0, 0.0277431;  0, 0, -1, -0.00758045] </A_T_B>
+</extrinsic_calibration>
+<extrinsic_calibration name="imu_T_color_primary" index="0" frame_A_id="100" frame_B_id="1">
+    <A_T_B> [1, 0, 0, -0.0394227;  0, -1, 0, 0.0277431;  0, 0, -1, -0.00758045] </A_T_B>
+</extrinsic_calibration>
+<extrinsic_calibration name="imu_T_depth_ir_primary" index="0" frame_A_id="100" frame_B_id="3">
+    <A_T_B> [1, 0, 0, -0.0394227;  0, -1, 0, 0.0277431;  0, 0, -1, -0.00758045] </A_T_B>
+</extrinsic_calibration>
+<extrinsic_calibration name="imu_T_android" index="0" frame_A_id="100" frame_B_id="40">
+    <A_T_B> [0, -1, 0, 0;  1, 0, 0, 0;  0, 0, 1, 0] </A_T_B>
+</extrinsic_calibration>
+<extrinsic_calibration name="android_T_opengl" index="0" frame_A_id="40" frame_B_id="42">
+    <A_T_B> [0, 1, 0, 0;  -1, 0, 0, 0;  0, 0, 1, 0] </A_T_B>
+</extrinsic_calibration>
+<extrinsic_calibration name="android_T_display" index="0" frame_A_id="40" frame_B_id="43">
+    <A_T_B> [0, 1, 0, 0;  -1, 0, 0, 0;  0, 0, 1, 0] </A_T_B>
+</extrinsic_calibration>
+<geo_location>
+    <latitude>37.389444</latitude>
+    <longitude>122.0819</longitude>
+    <altitude>32</altitude>
+</geo_location>
+</rig>
