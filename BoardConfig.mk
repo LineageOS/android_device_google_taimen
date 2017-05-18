@@ -24,16 +24,23 @@ include device/google/wahoo/BoardConfig.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
-ifeq (,$(filter taimen_clang, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/touch_core_base.ko \
-    device/google/wahoo-kernel/ftm4.ko \
-    device/google/wahoo-kernel/sw49408.ko
-else
+ifeq (,$(filter-out taimen_clang, $(TARGET_PRODUCT)))
+# if TARGET_PRODUCT == taimen_clang
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/clang/touch_core_base.ko \
     device/google/wahoo-kernel/clang/ftm4.ko \
     device/google/wahoo-kernel/clang/sw49408.ko
+else ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
+BOARD_VENDOR_KERNEL_MODULES += \
+# if TARGET_PRODUCT == taimen_gcc
+    device/google/wahoo-kernel/gcc/touch_core_base.ko \
+    device/google/wahoo-kernel/gcc/ftm4.ko \
+    device/google/wahoo-kernel/gcc/sw49408.ko
+else
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/touch_core_base.ko \
+    device/google/wahoo-kernel/ftm4.ko \
+    device/google/wahoo-kernel/sw49408.ko
 endif
 
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
