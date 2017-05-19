@@ -71,7 +71,8 @@
     <app_types>
       <app uc_type="PCM_PLAYBACK" bit_width="16" id="69936" max_rate="96000" />
       <app uc_type="PCM_PLAYBACK" bit_width="24" id="69940" max_rate="192000" />
-      <app uc_type="PCM_PLAYBACK" bit_width="32" id="69942" max_rate="192000" />
+      <app uc_type="PCM_CAPTURE"  bit_width="16" id="69938" max_rate="96000" />
+      <app uc_type="PCM_CAPTURE"  bit_width="24" id="69940" max_rate="96000" />
     </app_types>
 </audio_platform_info>
 
