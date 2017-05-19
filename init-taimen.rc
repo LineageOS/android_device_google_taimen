@@ -2,14 +2,6 @@ on init && property:ro.boot.slot=*
     # will remove this once slot_suffix is deprecated
     setprop ro.boot.slot_suffix _${ro.boot.slot}
 
-on post-fs-data
-    # QC Sensors
-    mkdir /persist/sensors
-    chmod 775 /persist/sensors
-    write /persist/sensors/sensors_settings 1
-    chmod 664 /persist/sensors/sensors_settings
-    chown system root /persist/sensors/sensors_settings
-
 on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
     stop fps_hal
 
