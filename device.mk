@@ -32,7 +32,7 @@ include device/google/wahoo/device.mk
 
 PRODUCT_COPY_FILES += \
     device/google/taimen/init-taimen.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-$(PRODUCT_HARDWARE).rc \
-    device/google/taimen/init.taimen.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).usb.rc
+    device/google/taimen/init.taimen.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_HARDWARE).usb.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
@@ -82,3 +82,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.config.calibration_cad=/vendor/etc/sensors/calibration_cad.xml \
   persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+
+# Temporary ALS/prox calibration reset
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init.resetcalib.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.resetcalib.sh
