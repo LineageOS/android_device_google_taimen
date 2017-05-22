@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
-    device/google/taimen/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+    device/google/taimen/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # verity
 AB_OTA_PARTITIONS += \
