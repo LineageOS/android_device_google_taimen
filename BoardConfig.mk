@@ -31,8 +31,8 @@ BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/clang/ftm4.ko \
     device/google/wahoo-kernel/clang/sw49408.ko
 else ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
 # if TARGET_PRODUCT == taimen_gcc
+BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/gcc/touch_core_base.ko \
     device/google/wahoo-kernel/gcc/ftm4.ko \
     device/google/wahoo-kernel/gcc/sw49408.ko
