@@ -32,6 +32,9 @@
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="19"/>
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_AEC" acdb_id="47"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="48"/>
+        <device name="SND_DEVICE_IN_VOICE_RECOG_USB_HEADSET_MIC" acdb_id="49"/>
     </acdb_ids>
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
@@ -62,7 +65,7 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_HFP" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_HANDSET" backend="handset" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="handset" interface="QUAT_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset-hac" interface="SLIMBUS_0_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="handset" interface="QUAT_MI2S_RX"/>
     </backend_names>
     <app_types>
