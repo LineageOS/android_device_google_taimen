@@ -83,3 +83,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.config.calibration_cad=/vendor/etc/sensors/calibration_cad.xml \
   persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+
+# Vibrator HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.vibrator.hal.click.duration=10

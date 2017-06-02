@@ -109,4 +109,8 @@
         <item>"usbradio:mtp:diag,serial_cdev,rmnet_gsi:diag,serial_cdev,rmnet_gsi"</item>
     </string-array>
 
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>12</item>
+    </integer-array>
 </resources>
