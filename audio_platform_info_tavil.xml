@@ -52,6 +52,8 @@
         <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19" />
         <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="18" />
         <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="18" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
+        <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />
     </pcm_ids>
     <config_params>
         <param key="input_mic_max_count" value="3"/>
@@ -71,10 +73,10 @@
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="handset" interface="QUAT_MI2S_RX"/>
     </backend_names>
     <app_types>
-      <app uc_type="PCM_PLAYBACK" bit_width="16" id="69936" max_rate="96000" />
-      <app uc_type="PCM_PLAYBACK" bit_width="24" id="69940" max_rate="192000" />
-      <app uc_type="PCM_CAPTURE"  bit_width="16" id="69938" max_rate="96000" />
-      <app uc_type="PCM_CAPTURE"  bit_width="24" id="69940" max_rate="96000" />
+      <app uc_type="PCM_PLAYBACK" mode="default" bit_width="16" id="69936" max_rate="96000" />
+      <app uc_type="PCM_PLAYBACK" mode="default" bit_width="24" id="69940" max_rate="192000" />
+      <app uc_type="PCM_CAPTURE"  mode="default" bit_width="16" id="69938" max_rate="96000" />
+      <app uc_type="PCM_CAPTURE"  mode="default" bit_width="24" id="69940" max_rate="96000" />
     </app_types>
 </audio_platform_info>
 
