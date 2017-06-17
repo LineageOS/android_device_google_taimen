@@ -608,6 +608,9 @@
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
 
+    <!-- Speaker swap -->
+    <ctl name="Swap channel" value="0" />
+
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="echo-reference">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="QUAT_MI2S_TX" />
