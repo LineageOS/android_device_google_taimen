@@ -681,6 +681,16 @@
         <path name="deep-buffer-playback speaker" />
     </path>
 
+    <path name="deep-buffer-playback speaker-and-bt-sco">
+      <path name="deep-buffer-playback speaker" />
+      <path name="deep-buffer-playback bt-sco"  />
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-bt-sco-wb">
+      <path name="deep-buffer-playback speaker" />
+      <path name="deep-buffer-playback bt-sco-wb"  />
+    </path>
+
     <path name="low-latency-playback">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -741,6 +751,16 @@
         <path name="low-latency-playback speaker" />
     </path>
 
+    <path name="low-latency-playback speaker-and-bt-sco">
+      <path name="low-latency-playback speaker" />
+      <path name="low-latency-playback bt-sco"  />
+    </path>
+
+    <path name="low-latency-playback speaker-and-bt-sco-wb">
+      <path name="low-latency-playback speaker" />
+      <path name="low-latency-playback bt-sco-wb"  />
+    </path>
+
     <path name="audio-ull-playback">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -775,6 +795,15 @@
         <path name="audio-ull-playback speaker" />
     </path>
 
+    <path name="audio-ull-playback bt-sco">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia8" value="1" />
+    </path>
+
+    <path name="audio-ull-playback bt-sco-wb">
+        <ctl name="BT SampleRate" value="KHZ_16" />
+        <path name="audio-ull-playback bt-sco" />
+    </path>
+
     <path name="audio-ull-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -790,6 +819,16 @@
     <path name="audio-ull-playback speaker-and-usb-headphones">
         <path name="audio-ull-playback usb-headphones" />
         <path name="audio-ull-playback speaker" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-bt-sco">
+      <path name="audio-ull-playback speaker" />
+      <path name="audio-ull-playback bt-sco"  />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-bt-sco-wb">
+      <path name="audio-ull-playback speaker" />
+      <path name="audio-ull-playback bt-sco-wb"  />
     </path>
 
     <path name="hifi-playback display-port">
@@ -868,6 +907,16 @@
         <path name="compress-offload-playback speaker" />
     </path>
 
+    <path name="compress-offload-playback speaker-and-bt-sco">
+      <path name="compress-offload-playback speaker" />
+      <path name="compress-offload-playback bt-sco"  />
+    </path>
+
+    <path name="compress-offload-playback speaker-and-bt-sco-wb">
+      <path name="compress-offload-playback speaker" />
+      <path name="compress-offload-playback bt-sco-wb"  />
+    </path>
+
     <path name="mmap-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -892,6 +941,16 @@
 
     <path name="mmap-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="mmap-playback speaker-and-bt-sco">
+      <path name="mmap-playback speaker" />
+      <path name="mmap-playback bt-sco"  />
+    </path>
+
+    <path name="mmap-playback speaker-and-bt-sco-wb">
+      <path name="mmap-playback speaker" />
+      <path name="mmap-playback bt-sco-wb"  />
     </path>
 
     <path name="audio-record">
