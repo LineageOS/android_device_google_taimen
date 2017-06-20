@@ -761,6 +761,14 @@
       <path name="low-latency-playback bt-sco-wb"  />
     </path>
 
+    <path name="low-latency-playback voice-tty-hco-handset">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback voice-tty-vco-usb">
+        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
     <path name="audio-ull-playback">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
@@ -1097,6 +1105,16 @@
 
     <path name="voicemmode1-call usb-headset">
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
+    </path>
+
+    <path name="voicemmode1-call voice-tty-vco-usb">
+        <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
+    </path>
+
+    <path name="voicemmode1-call voice-tty-hco-handset">
+        <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
     </path>
 
@@ -1853,6 +1871,20 @@
         <path name="voice-tty-full-headset-mic" />
         <ctl name="ADC2 Volume" value="8" />
         <ctl name="DEC0 Volume" value="82" />
+    </path>
+
+    <path name="voice-tty-full-usb-mic">
+    </path>
+
+    <path name="voice-tty-hco-usb-mic">
+    </path>
+
+    <path name="voice-tty-full-usb">
+        <ctl name="TTY Mode" value="FULL" />
+    </path>
+
+    <path name="voice-tty-vco-usb">
+        <ctl name="TTY Mode" value="VCO" />
     </path>
 
     <path name="listen-handset-mic">
