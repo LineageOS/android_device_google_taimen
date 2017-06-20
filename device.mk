@@ -63,6 +63,9 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_taimen.xml \
     device/google/taimen/audio_platform_info_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tavil_taimen.xml
 
+# Bug 62375603
+PRODUCT_PROPERTY_OVERRIDES += audio.adm.buffering.ms=4
+
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
     device/google/taimen/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
