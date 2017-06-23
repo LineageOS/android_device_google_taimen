@@ -95,6 +95,7 @@
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia16" value="0" />
     <ctl name="SLIMBUS_6_RX Port Mixer SLIM_0_TX" value="0" />
     <ctl name="AUX_PCM_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="AUX_PCM_RX Audio Mixer MultiMedia3" value="0" />
     <ctl name="AUX_PCM_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="AUX_PCM_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="AUX_PCM_RX Audio Mixer MultiMedia7" value="0" />
@@ -194,6 +195,7 @@
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia16" value="0" />
     <ctl name="MultiMedia1 Mixer USB_AUDIO_TX" value="0" />
+    <ctl name="MultiMedia3 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia5 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia8 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="USB_AUDIO_RX Channels" value="Two" />
@@ -204,6 +206,7 @@
     <ctl name="USB_AUDIO_TX Format" value="S16_LE" />
     <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="0" />
@@ -795,7 +798,7 @@
     </path>
 
     <path name="audio-ull-playback display-port">
-        <ctl name="DISPLAY_PORT Mixer MultiMedia3" value="1" />
+        <ctl name="DISPLAY_PORT Mixer MultiMedia8" value="1" />
     </path>
 
     <path name="audio-ull-playback speaker-and-display-port">
@@ -926,11 +929,11 @@
     </path>
 
     <path name="mmap-playback">
-        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="mmap-playback speaker">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="mmap-playback speaker-and-headphones">
@@ -939,7 +942,7 @@
     </path>
 
     <path name="mmap-playback bt-sco">
-        <ctl name="AUX_PCM_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="AUX_PCM_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="mmap-playback bt-sco-wb">
@@ -948,7 +951,15 @@
     </path>
 
     <path name="mmap-playback afe-proxy">
-        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
+    <path name="mmap-playback usb-headset">
+        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
+    <path name="mmap-playback usb-headphones">
+        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="mmap-playback speaker-and-bt-sco">
@@ -1002,11 +1013,11 @@
     </path>
 
     <path name="mmap-record">
-      <ctl name="MultiMedia10 Mixer SLIM_0_TX" value="1" />
+      <ctl name="MultiMedia3 Mixer SLIM_0_TX" value="1" />
     </path>
 
     <path name="mmap-record bt-sco">
-      <ctl name="MultiMedia10 Mixer AUX_PCM_UL_TX" value="1" />
+      <ctl name="MultiMedia3 Mixer AUX_PCM_UL_TX" value="1" />
     </path>
 
     <path name="mmap-record bt-sco-wb">
@@ -1015,7 +1026,11 @@
     </path>
 
     <path name="mmap-record capture-fm">
-      <ctl name="MultiMedia10 Mixer TERT_MI2S_TX" value="1" />
+      <ctl name="MultiMedia3 Mixer TERT_MI2S_TX" value="1" />
+    </path>
+
+    <path name="mmap-record usb-headset-mic">
+       <ctl name="MultiMedia3 Mixer USB_AUDIO_TX" value="1" />
     </path>
 
     <path name="vowlan-call">
@@ -1933,7 +1948,7 @@
     </path>
 
     <path name="audio-ull-playback bt-a2dp">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia3" value="1" />
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia8" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-and-bt-a2dp">
