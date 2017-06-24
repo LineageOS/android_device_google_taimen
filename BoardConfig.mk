@@ -59,3 +59,7 @@ endif
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
 
 BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/
+
+# Rounded corners recovery UI. 105px = 30dp * 3.5 density, where 30dp comes from
+# rounded_corner_radius in overlay/frameworks/base/packages/SystemUI/res/values/dimens.xml.
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
