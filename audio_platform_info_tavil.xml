@@ -50,8 +50,8 @@
         <usecase name="USECASE_VOICEMMODE1_CALL" type="out" id="2" />
         <usecase name="USECASE_VOICEMMODE2_CALL" type="in" id="19" />
         <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19" />
-        <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="18" />
-        <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="18" />
+        <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="4" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="4" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
         <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />
     </pcm_ids>
