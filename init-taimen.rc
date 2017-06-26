@@ -37,3 +37,6 @@ on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
 on property:sys.all.modules.ready=1
     # Update touch firmware if required
     write /sys/devices/virtual/input/ftm4_touch/check_fw 1
+
+on property:sys.retaildemo.enabled=* && property:sys.all.modules.ready=1
+    write /sys/module/lge_battery/parameters/demo_mode ${sys.retaildemo.enabled}
