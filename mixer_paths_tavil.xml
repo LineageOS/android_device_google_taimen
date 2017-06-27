@@ -604,24 +604,40 @@
     <!-- ADSP testfwk end-->
     <!-- TI SPK Configuration -->
     <ctl name="Stereo Configuration" value="0" />
+    <ctl name="Stereo EchoRef Ctrl" value="left channel" />
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
 
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="echo-reference">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="QUAT_MI2S_TX" />
+        <ctl name="Stereo EchoRef Ctrl" value="left channel" />
     </path>
 
     <path name="echo-reference speaker">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="QUAT_MI2S_TX" />
+        <ctl name="Stereo EchoRef Ctrl" value="right channel" />
     </path>
 
     <path name="echo-reference handset">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="QUAT_MI2S_TX" />
+        <ctl name="Stereo EchoRef Ctrl" value="left channel" />
     </path>
 
     <path name="echo-reference headphones">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_6_RX" />
+    </path>
+
+    <path name="echo-reference usb-headset">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="USB_AUDIO_RX" />
+    </path>
+
+    <path name="echo-reference bt-sco">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_7_RX" />
+    </path>
+
+    <path name="echo-reference bt-sco-wb">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_7_RX" />
     </path>
 
     <path name="deep-buffer-playback">
@@ -1451,6 +1467,7 @@
     <!-- Phone SPK RX -->
     <path name="voice-speaker">
         <path name="speaker-mono" />
+        <ctl name="QUAT_MI2S_RX Channels" value="One" />
     </path>
 
     <!-- Phone SPK RX -->
@@ -1493,9 +1510,9 @@
     <!-- Phone SPK TX 3rd:DEC5 4dB, 2nd:DEC6 4dB, 1st:DEC7 4dB,-->
     <path name="speaker-dmic-endfire">
         <path name="triple-mic" />
-        <ctl name="DEC5 Volume" value="88" />
-        <ctl name="DEC6 Volume" value="88" />
-        <ctl name="DEC7 Volume" value="88" />
+        <ctl name="DEC5 Volume" value="100" />
+        <ctl name="DEC6 Volume" value="100" />
+        <ctl name="DEC7 Volume" value="100" />
     </path>
 
     <!-- SPKR_PHONE_MIC 3nd D:4 dB -->
@@ -1531,8 +1548,8 @@
     <!-- TX Dual-mic 1st MIC D:4 dB, 2nd MIC:4 dB -->
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
-        <ctl name="DEC7 Volume" value="88" />
-        <ctl name="DEC6 Volume" value="88" />
+        <ctl name="DEC7 Volume" value="97" />
+        <ctl name="DEC6 Volume" value="97" />
     </path>
 
     <!-- Phone RCV TX Dual-mic 1st MIC D:13 dB, 2nd MIC:13 dB -->
