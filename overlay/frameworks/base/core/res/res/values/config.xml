@@ -46,6 +46,7 @@
         <item>1250</item>
         <item>2200</item>
         <item>4000</item>
+        <item>5000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -53,16 +54,17 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>10</item>   <!-- 0-5 -->
-        <item>33</item>   <!-- 5-20 -->
-        <item>49</item>   <!-- 20-40 -->
-        <item>68</item>   <!-- 40-100 -->
-        <item>87</item>   <!-- 100-325 -->
-        <item>108</item>  <!-- 325-600 -->
-        <item>132</item>  <!-- 600-1250 -->
-        <item>167</item>  <!-- 1250-2200 -->
-        <item>206</item>  <!-- 2200-4000 -->
-        <item>255</item>  <!-- 4000+ -->
+        <item>43</item>   <!-- 0-5 -->
+        <item>67</item>   <!-- 5-20 -->
+        <item>82</item>   <!-- 20-40 -->
+        <item>101</item>   <!-- 40-100 -->
+        <item>113</item>   <!-- 100-325 -->
+        <item>125</item>  <!-- 325-600 -->
+        <item>140</item>  <!-- 600-1250 -->
+        <item>159</item>  <!-- 1250-2200 -->
+        <item>175</item>  <!-- 2200-4000 -->
+        <item>207</item>  <!-- 4000-5000 -->
+        <item>223</item>  <!-- 5000+ -->
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -101,6 +103,10 @@
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">4</integer>
+
+    <!-- Maximum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness above this level. -->
+    <integer name="config_screenBrightnessSettingMaximum">223</integer>
 
     <!-- Values for USB port setting. in format of bootmode:current function:new function -->
     <string-array translatable="false" name="config_oemUsbModeOverride">
