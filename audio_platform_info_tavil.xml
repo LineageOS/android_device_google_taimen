@@ -35,6 +35,8 @@
         <device name="SND_DEVICE_IN_USB_HEADSET_MIC_AEC" acdb_id="47"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="48"/>
         <device name="SND_DEVICE_IN_VOICE_RECOG_USB_HEADSET_MIC" acdb_id="49"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="129"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" acdb_id="126"/>
     </acdb_ids>
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
@@ -84,8 +86,10 @@
     <app_types>
       <app uc_type="PCM_PLAYBACK" mode="default" bit_width="16" id="69936" max_rate="96000" />
       <app uc_type="PCM_PLAYBACK" mode="default" bit_width="24" id="69940" max_rate="192000" />
+      <app uc_type="PCM_PLAYBACK" mode="voip" bit_width="16" id="69945" max_rate="48000" />
       <app uc_type="PCM_CAPTURE"  mode="default" bit_width="16" id="69938" max_rate="96000" />
       <app uc_type="PCM_CAPTURE"  mode="default" bit_width="24" id="69940" max_rate="96000" />
+      <app uc_type="PCM_CAPTURE"  mode="voip" bit_width="16" id="69945" max_rate="48000" />
     </app_types>
 </audio_platform_info>
 
