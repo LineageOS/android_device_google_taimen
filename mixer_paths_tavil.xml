@@ -1432,6 +1432,7 @@
     </path>
 
     <path name="sidetone-handset">
+        <ctl name="Voice Sidetone Enable" value="1" />
     </path>
 
     <path name="sidetone-hac-handset">
@@ -1548,8 +1549,8 @@
     <!-- TX Dual-mic 1st MIC D:4 dB, 2nd MIC:4 dB -->
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
-        <ctl name="DEC7 Volume" value="97" />
-        <ctl name="DEC6 Volume" value="97" />
+        <ctl name="DEC7 Volume" value="93" />
+        <ctl name="DEC6 Volume" value="93" />
     </path>
 
     <!-- Phone RCV TX Dual-mic 1st MIC D:13 dB, 2nd MIC:13 dB -->
