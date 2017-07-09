@@ -40,3 +40,6 @@ on property:sys.all.modules.ready=1
 
 on property:sys.retaildemo.enabled=* && property:sys.all.modules.ready=1
     write /sys/module/lge_battery/parameters/demo_mode ${sys.retaildemo.enabled}
+
+on property:ro.boot.hardware.display=2-1
+    setprop sys.display.low_persistence_mode_brightness 255
