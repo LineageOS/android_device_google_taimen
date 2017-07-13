@@ -64,7 +64,9 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/audio_platform_info_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tavil_taimen.xml
 
 # Bug 62375603
-PRODUCT_PROPERTY_OVERRIDES += audio.adm.buffering.ms=4
+PRODUCT_PROPERTY_OVERRIDES += audio.adm.buffering.ms=3
+PRODUCT_PROPERTY_OVERRIDES += audio_hal.period_multiplier=2
+PRODUCT_PROPERTY_OVERRIDES += af.fast_track_multiplier=1
 
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
