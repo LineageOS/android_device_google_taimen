@@ -219,6 +219,8 @@
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia16" value="0" />
     <ctl name="QUAT_MI2S_RX Channels" value="Two" />
+    <ctl name="QUAT_MI2S_RX Format" value="S24_LE" />
+    <ctl name="QUAT_MI2S_TX Format" value="S24_LE" />
     <ctl name="SLIM_6_RX Channels" value="Two" />
     <ctl name="IIR0 INP0 MUX" value="ZERO" />
     <ctl name="IIR0 INP1 MUX" value="ZERO" />
