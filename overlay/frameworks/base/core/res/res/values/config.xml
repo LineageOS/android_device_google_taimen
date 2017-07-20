@@ -88,7 +88,7 @@
     <integer name="config_shutdownBatteryTemperature">600</integer>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">6</integer>
+    <integer name="config_screenBrightnessDim">4</integer>
 
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">13</integer>
