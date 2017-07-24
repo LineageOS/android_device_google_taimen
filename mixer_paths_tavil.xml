@@ -607,6 +607,8 @@
     <!-- TI SPK Configuration -->
     <ctl name="Stereo Configuration" value="0" />
     <ctl name="Stereo EchoRef Ctrl" value="left channel" />
+    <ctl name="Stereo LDAC Playback Volume" value="15" />
+    <ctl name="Stereo RDAC Playback Volume" value="15" />
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
 
@@ -1589,6 +1591,7 @@
 
     <path name="handset">
         <ctl name="Stereo Configuration" value="1" />
+        <ctl name="Stereo LDAC Playback Volume" value="0" />
         <ctl name="QUAT_MI2S_RX Channels" value="One" />
     </path>
 
