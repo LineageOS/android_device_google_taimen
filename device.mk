@@ -79,6 +79,13 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_policy=2
 # Allow EXCLUSIVE then fall back to SHARED.
 PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=2
 
+# Increase the apparent size of a hardware burst from 1 msec to 2 msec.
+# A "burst" is the number of frames processed at one time.
+# That is an increase from 48 to 96 frames at 48000 Hz.
+# The DSP will still be bursting at 48 frames but AAudio will think the burst is 96 frames.
+# A low number, like 48, might increase power consumption or stress the system.
+PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
+
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
     device/google/taimen/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
