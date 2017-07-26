@@ -15,7 +15,7 @@ on late-fs
 
 on property:sys.boot_completed=1
     # end boot time fs tune
-    write /sys/block/sda/queue/read_ahead_kb 512
+    write /sys/block/sda/queue/read_ahead_kb 1024
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
     write /sys/block/sde/queue/read_ahead_kb 512
