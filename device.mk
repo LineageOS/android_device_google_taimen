@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
 # Enable modem logging
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.modem.diag.qdb=0\
     persist.sys.modem.diag.mdlog=true \
     ro.radio.log_loc="/data/vendor/modem_dump" \
     ro.radio.log_prefix="modem_log_"
