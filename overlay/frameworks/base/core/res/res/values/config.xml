@@ -22,9 +22,9 @@
 <resources>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">g2pw2100</string>
+    <string name="config_mms_user_agent" translatable="false">g011c</string>
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.gstatic.com/android/sms/G_2PW2100.xml</string>
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.gstatic.com/android/sms/G011C.xml</string>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
