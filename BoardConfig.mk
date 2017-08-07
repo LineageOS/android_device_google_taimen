@@ -24,6 +24,9 @@ include device/google/wahoo/BoardConfig.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
+# sepolicy
+BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
+
 ifeq (,$(filter-out taimen_clang, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_clang
 BOARD_VENDOR_KERNEL_MODULES += \
