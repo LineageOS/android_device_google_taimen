@@ -24,22 +24,22 @@ volume index from 0 to 100.
 
 <volumes>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_HEADSET">
-        <point>0,-4000</point>
-        <point>33,-3000</point>
-        <point>66,-2000</point>
-        <point>100,-1000</point>
+        <point>0,-3000</point>
+        <point>33,-2000</point>
+        <point>66,-1000</point>
+        <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_SPEAKER">
-        <point>0,-4000</point>
-        <point>33,-3400</point>
-        <point>66,-2600</point>
-        <point>100,-1800</point>
+        <point>0,-3000</point>
+        <point>33,-2000</point>
+        <point>66,-1000</point>
+        <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EARPIECE">
-        <point>0,-4000</point>
-        <point>33,-3400</point>
-        <point>66,-2600</point>
-        <point>100,-1800</point>
+        <point>0,-3000</point>
+        <point>33,-2000</point>
+        <point>66,-1000</point>
+        <point>100,0</point>
     </volume>
     <volume stream="AUDIO_STREAM_VOICE_CALL" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                              ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
