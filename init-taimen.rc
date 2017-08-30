@@ -35,8 +35,8 @@ on init && property:ro.boot.slot=*
 on init && property:ro.boot.revision=*
     setprop ro.boot.hardware.revision ${ro.boot.revision}
 
-on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
-    stop fps_hal
+on property:init.svc.vendor.fps_hal=running && property:ro.boot.revision=rev_0
+    stop vendor.fps_hal
 
 on property:sys.all.modules.ready=1
     # Update touch firmware if required
