@@ -30,8 +30,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/embmslibrary.jar:system/framework/embmslibrary.jar:qcom \
     vendor/qcom/taimen/proprietary/rcsimssettings.jar:system/framework/rcsimssettings.jar:qcom \
     vendor/qcom/taimen/proprietary/vendor.qti.qcril.am-V1.0-java.jar:system/framework/vendor.qti.qcril.am-V1.0-java.jar:qcom \
-    vendor/qcom/taimen/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/android.hardware.oemlock@1.0.so:system/lib64/android.hardware.oemlock@1.0.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so:qcom \
@@ -42,7 +40,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libion.so:system/lib64/libion.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libiperf.so:system/lib64/libiperf.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/librcc.so:system/lib64/librcc.so:qcom \
     vendor/qcom/taimen/proprietary/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
@@ -53,7 +50,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so:qcom \
     vendor/qcom/taimen/proprietary/lib-imsvt.so:system/lib/lib-imsvt.so:qcom \
     vendor/qcom/taimen/proprietary/lib-imsvtutils.so:system/lib/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/libion.so:system/lib/libion.so:qcom \
     vendor/qcom/taimen/proprietary/libiperf.so:system/lib/libiperf.so:qcom \
     vendor/qcom/taimen/proprietary/librcc.so:system/lib/librcc.so:qcom \
     vendor/qcom/taimen/proprietary/iperf3:system/xbin/iperf3:qcom \
