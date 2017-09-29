@@ -28,6 +28,10 @@ on boot
     # Allow ftm4 autotune from adb shell
     chown system shell /sys/devices/virtual/input/ftm4_touch/autotune
 
+on init
+    # Disable system-pc idle to prevent touch drops [b/64141048]
+    write /sys/module/lpm_levels/system/system-pc/idle_enabled N
+
 on init && property:ro.boot.revision=*
     setprop ro.boot.hardware.revision ${ro.boot.revision}
 
