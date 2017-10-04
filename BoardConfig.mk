@@ -27,14 +27,7 @@ BOARD_AVB_ENABLE := true
 # sepolicy
 BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
-ifeq (,$(filter-out taimen_clang, $(TARGET_PRODUCT)))
-# if TARGET_PRODUCT == taimen_clang
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/clang/touch_core_base.ko \
-    device/google/wahoo-kernel/clang/ftm4.ko \
-    device/google/wahoo-kernel/clang/sw49408.ko \
-    device/google/wahoo-kernel/clang/lge_battery.ko
-else ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
+ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_gcc
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/gcc/touch_core_base.ko \
