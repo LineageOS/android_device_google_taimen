@@ -44,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Kernel Modules Config
 PRODUCT_COPY_FILES += \
-    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg \
+    device/google/taimen/init.insmod_charger.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod_charger.cfg
 
 # Logging
 PRODUCT_COPY_FILES += \
