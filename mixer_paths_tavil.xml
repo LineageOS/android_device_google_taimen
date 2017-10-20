@@ -1560,10 +1560,11 @@
         <ctl name="DEC7 Volume" value="86" />
     </path>
 
-    <!-- CAMCORDER MIC 2nd D:4 dB -->
+    <!-- CAMCORDER MIC 2nd D:0 dB -->
     <path name="camcorder-mic">
-        <path name="dmic1" />
-        <ctl name="DEC7 Volume" value="88" />
+        <path name="dmic5" />
+        <ctl name="DEC6 Volume" value="84" />
+        <ctl name="SLIM_0_TX Format" value="S24_LE" />
     </path>
 
     <!-- TX Dual-mic 1st MIC D:4 dB, 2nd MIC:4 dB -->
