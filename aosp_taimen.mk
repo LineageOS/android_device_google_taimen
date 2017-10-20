@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# b/67718369 temporarily disable privapp-permissions whitelist enforcement
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=disable
+
 # Get the full APNs
 PRODUCT_COPY_FILES := device/google/wahoo/apns-full-conf.xml:system/etc/apns-conf.xml
 
