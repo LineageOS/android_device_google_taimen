@@ -41,6 +41,34 @@ BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/ftm4.ko \
     device/google/wahoo-kernel/kasan/sw49408.ko \
     device/google/wahoo-kernel/kasan/lge_battery.ko
+else ifeq (,$(filter-out taimen_kernel_debug_memory, $(TARGET_PRODUCT)))
+# if TARGET == taimen_kernel_debug_memory
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/debug_memory/touch_core_base.ko \
+    device/google/wahoo-kernel/debug_memory/ftm4.ko \
+    device/google/wahoo-kernel/debug_memory/sw49408.ko \
+    device/google/wahoo-kernel/debug_memory/lge_battery.ko
+else ifeq (,$(filter-out taimen_kernel_debug_locking, $(TARGET_PRODUCT)))
+# if TARGET == taimen_kernel_debug_locking
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/debug_locking/touch_core_base.ko \
+    device/google/wahoo-kernel/debug_locking/ftm4.ko \
+    device/google/wahoo-kernel/debug_locking/sw49408.ko \
+    device/google/wahoo-kernel/debug_locking/lge_battery.ko
+else ifeq (,$(filter-out taimen_kernel_debug_hang, $(TARGET_PRODUCT)))
+# if TARGET == taimen_kernel_debug_hang
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/debug_hang/touch_core_base.ko \
+    device/google/wahoo-kernel/debug_hang/ftm4.ko \
+    device/google/wahoo-kernel/debug_hang/sw49408.ko \
+    device/google/wahoo-kernel/debug_hang/lge_battery.ko
+else ifeq (,$(filter-out taimen_kernel_debug_api, $(TARGET_PRODUCT)))
+# if TARGET == taimen_kernel_debug_api
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/debug_api/touch_core_base.ko \
+    device/google/wahoo-kernel/debug_api/ftm4.ko \
+    device/google/wahoo-kernel/debug_api/sw49408.ko \
+    device/google/wahoo-kernel/debug_api/lge_battery.ko
 else
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/touch_core_base.ko \
