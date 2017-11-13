@@ -18,7 +18,7 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/read_ahead_kb 1024
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
-    write /sys/block/sde/queue/read_ahead_kb 512
+    write /sys/block/sde/queue/read_ahead_kb 1024
     write /sys/block/sde/queue/nr_requests 128
     write /sys/block/sde/queue/iostats 1
     write /sys/block/dm-0/queue/read_ahead_kb 512
@@ -27,10 +27,6 @@ on property:sys.boot_completed=1
 on boot
     # Allow ftm4 autotune from adb shell
     chown system shell /sys/devices/virtual/input/ftm4_touch/autotune
-
-on init && property:ro.boot.slot=*
-    # will remove this once slot_suffix is deprecated
-    setprop ro.boot.slot_suffix _${ro.boot.slot}
 
 on init && property:ro.boot.revision=*
     setprop ro.boot.hardware.revision ${ro.boot.revision}
