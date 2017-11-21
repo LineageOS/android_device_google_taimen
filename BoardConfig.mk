@@ -41,6 +41,13 @@ BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/ftm4.ko \
     device/google/wahoo-kernel/kasan/sw49408.ko \
     device/google/wahoo-kernel/kasan/lge_battery.ko
+else ifeq (,$(filter-out taimen_kcfi, $(TARGET_PRODUCT)))
+# if TARGET_PRODUCT == taimen_kcfi
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/kcfi/touch_core_base.ko \
+    device/google/wahoo-kernel/kcfi/ftm4.ko \
+    device/google/wahoo-kernel/kcfi/sw49408.ko \
+    device/google/wahoo-kernel/kcfi/lge_battery.ko
 else ifeq (,$(filter-out taimen_kernel_debug_memory, $(TARGET_PRODUCT)))
 # if TARGET == taimen_kernel_debug_memory
 BOARD_VENDOR_KERNEL_MODULES += \
