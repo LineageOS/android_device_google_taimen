@@ -1,0 +1,57 @@
+#######################################
+# Google blobs from extract-lists.txt #
+#######################################
+
+# CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
+
+# Diag
+lib64/libdiag_system.so
+lib/libdiag_system.so
+
+# Firmware
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+
+# IMS/HD Voice
+-framework/rcsimssettings.jar
+lib64/com.qualcomm.qti.imsrtpservice@1.0.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib/com.qualcomm.qti.imsrtpservice@1.0.so
+lib/libimscamera_jni.so
+lib/libimsmedia_jni.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+
+# Perf
+#lib64/libiperf.so - invalid
+lib64/librcc.so
+#lib/libiperf.so - invalid
+lib/librcc.so
+#xbin/iperf3 - invalid
+#xbin/sanitizer-status - invalid
+
+# RIL
+-framework/embmslibrary.jar
+-framework/qcrilhook.jar
+
+#####################################
+# LineageOS blobs: Additional blobs #
+#####################################
+
+# Permissions
+etc/permissions/privapp-permissions-wahoo.xml
