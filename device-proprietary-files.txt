@@ -1,0 +1,47 @@
+# Bluetooth
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
+# CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
+
+# Hotword Enrollment
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:PRESIGNED
+
+# IMS/HD Voice
+-priv-app/CNEService/CNEService.apk
+
+# Permissions
+etc/permissions/privapp-permissions-google.xml
+etc/permissions/privapp-permissions-wahoo.xml
+
+# RIL
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Sprint
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# Vendor APKs
+-priv-app/datastatusnotification/datastatusnotification.apk
+-priv-app/ModemService/ModemService.apk
+-priv-app/QtiTelephonyService/QtiTelephonyService.apk
+-priv-app/SSRestartDetector/SSRestartDetector.apk
+-priv-app/TimeService/TimeService.apk
+-priv-app/wahoo_gfxdrv/wahoo_gfxdrv.apk
+
+# VZW
+-app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
+etc/permissions/com.android.vzwomatrigger.xml
+etc/permissions/com.verizon.apn.xml
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.llkagent.xml
+etc/permissions/com.verizon.provider.xml
+etc/permissions/com.verizon.services.xml
+etc/permissions/vzw_mvs_permissions.xml
+-framework/VerizonUnifiedSettings.jar:PRESIGNED
+-priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
