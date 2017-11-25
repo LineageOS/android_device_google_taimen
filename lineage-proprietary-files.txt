@@ -1,0 +1,126 @@
+#######################################
+# Google blobs from extract-lists.txt #
+#######################################
+
+# AptX
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
+# CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
+
+# Diag
+lib64/libdiag_system.so
+lib/libdiag_system.so
+
+# EMBMS
+-framework/embmslibrary.jar
+
+# Firmware
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+
+# IMS/HD Voice
+#-framework/com.android.ims.rcsmanager.jar - source available
+-framework/rcsimssettings.jar
+lib64/com.qualcomm.qti.imsrtpservice@1.0.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib/com.qualcomm.qti.imsrtpservice@1.0.so
+lib/libimscamera_jni.so
+lib/libimsmedia_jni.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+
+# Network
+#bin/netutils-wrapper-1.0 - source available
+
+# Perf
+#lib64/libiperf.so - invalid
+lib64/librcc.so
+#lib/libiperf.so - invalid
+lib/librcc.so
+#xbin/iperf3 - invalid
+#xbin/sanitizer-status - invalid
+
+# Permissions
+#etc/permissions/com.android.ims.rcsmanager.xml - source available
+
+# RIL
+-framework/vendor.qti.qcril.am-V1.0-java.jar
+
+#####################################
+# LineageOS blobs: Additional blobs #
+#####################################
+
+# Permissions
+etc/permissions/com.android.sdm.plugins.connmo.xml
+etc/permissions/com.android.sdm.plugins.sprintdm.xml
+etc/permissions/com.verizon.apn.xml
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.llkagent.xml
+etc/permissions/com.verizon.provider.xml
+etc/permissions/com.verizon.services.xml
+etc/permissions/features-verizon.xml
+etc/permissions/obdm_permissions.xml
+etc/permissions/privapp-permissions-wahoo.xml
+etc/permissions/vzw_mvs_permissions.xml
+
+# Hotword Enrollment
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:PRESIGNED
+
+# IMS/HD Voice
+-app/ims/ims.apk
+-priv-app/CNEService/CNEService.apk
+
+# EMBMS
+-app/embms/embms.apk
+
+# RIL
+-app/Tycho/Tycho.apk:app/Tycho/Tycho.apk:PRESIGNED
+-priv-app/datastatusnotification/datastatusnotification.apk
+-priv-app/ModemService/ModemService.apk
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-priv-app/QtiTelephonyService/QtiTelephonyService.apk
+-priv-app/SSRestartDetector/SSRestartDetector.apk
+
+# Sprint
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# Time services
+-priv-app/TimeService/TimeService.apk
+
+# GPU driver
+-priv-app/wahoo_gfxdrv/wahoo_gfxdrv.apk
+
+# VZW
+-app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
+etc/permissions/com.android.vzwomatrigger.xml
+etc/permissions/com.verizon.apn.xml
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.llkagent.xml
+etc/permissions/com.verizon.provider.xml
+etc/permissions/com.verizon.services.xml
+etc/permissions/vzw_mvs_permissions.xml
+-framework/VerizonUnifiedSettings.jar:PRESIGNED
+-priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
+
+# OMA DM
+lib/libdmengine.so
+lib/libdmjavaplugin.so
