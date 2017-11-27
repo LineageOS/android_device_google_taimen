@@ -14,7 +14,6 @@
 
 #  blob(s) necessary for Taimen hardware
 PRODUCT_COPY_FILES := \
-    vendor/qcom/taimen/proprietary/netutils-wrapper-1.0:system/bin/netutils-wrapper-1.0:qcom \
     vendor/qcom/taimen/proprietary/ATT_profiles.xml:system/etc/cne/Nexus/ATT/ATT_profiles.xml:qcom \
     vendor/qcom/taimen/proprietary/ROW_profiles.xml:system/etc/cne/Nexus/ROW/ROW_profiles.xml:qcom \
     vendor/qcom/taimen/proprietary/VZW_profiles.xml:system/etc/cne/Nexus/VZW/VZW_profiles.xml:qcom \
