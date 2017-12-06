@@ -37,6 +37,12 @@
         <device name="SND_DEVICE_IN_VOICE_RECOG_USB_HEADSET_MIC" acdb_id="49"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="129"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" acdb_id="126"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" acdb_id="122"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="123"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="143"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="144"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
     </acdb_ids>
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
@@ -53,6 +59,7 @@
         <usecase name="USECASE_VOICEMMODE2_CALL" type="in" id="19" />
         <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19" />
         <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="4" />
+        <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="7" />
         <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="4" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
         <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />

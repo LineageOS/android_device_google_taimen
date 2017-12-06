@@ -44,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Kernel Modules Config
 PRODUCT_COPY_FILES += \
-    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg \
+    device/google/taimen/init.insmod_charger.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod_charger.cfg
 
 # Logging
 PRODUCT_COPY_FILES += \
@@ -77,11 +78,11 @@ PRODUCT_COPY_FILES += \
 # 1 is AAUDIO_POLICY_NEVER  means only use Legacy path.
 # 2 is AAUDIO_POLICY_AUTO   means try MMAP then fallback to Legacy path.
 # 3 is AAUDIO_POLICY_ALWAYS means only use MMAP path.
-PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_policy=1
+PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_policy=2
 # 1 is AAUDIO_POLICY_NEVER  means only use SHARED mode
 # 2 is AAUDIO_POLICY_AUTO   means try EXCLUSIVE then fallback to SHARED mode.
 # 3 is AAUDIO_POLICY_ALWAYS means only use EXCLUSIVE mode.
-PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=1
+PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=2
 
 # Increase the apparent size of a hardware burst from 1 msec to 2 msec.
 # A "burst" is the number of frames processed at one time.

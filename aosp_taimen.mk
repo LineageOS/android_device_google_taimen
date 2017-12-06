@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 PRODUCT_COPY_FILES += \
-    device/google/taimen/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf
+    device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
 

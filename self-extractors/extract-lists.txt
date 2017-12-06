@@ -20,8 +20,6 @@
             system/framework/embmslibrary.jar \
             system/framework/rcsimssettings.jar \
             system/framework/vendor.qti.qcril.am-V1.0-java.jar \
-            system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
-            system/lib64/android.hardware.oemlock@1.0.so \
             system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
             system/lib64/libaptX_encoder.so \
             system/lib64/libaptXHD_encoder.so \
@@ -32,7 +30,6 @@
             system/lib64/lib-imsvtextutils.so \
             system/lib64/lib-imsvt.so \
             system/lib64/lib-imsvtutils.so \
-            system/lib64/libion.so \
             system/lib64/libiperf.so \
             system/lib64/librcc.so \
             system/lib/com.qualcomm.qti.imsrtpservice@1.0.so \
@@ -43,7 +40,6 @@
             system/lib/lib-imsvtextutils.so \
             system/lib/lib-imsvt.so \
             system/lib/lib-imsvtutils.so \
-            system/lib/libion.so \
             system/lib/libiperf.so \
             system/lib/librcc.so \
             system/xbin/iperf3 \
