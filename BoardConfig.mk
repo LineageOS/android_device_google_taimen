@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Allow Lineage config to override others
+-include device/google/taimen/BoardConfigLineage.mk
+
 TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
 
