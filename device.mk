@@ -130,3 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.texture_cache_size=84 \
     ro.hwui.layer_cache_size=64 \
     ro.hwui.path_cache_size=32
+
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
