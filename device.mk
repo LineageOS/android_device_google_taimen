@@ -134,3 +134,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=5000000
 
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
