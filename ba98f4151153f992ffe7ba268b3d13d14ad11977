@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "41a2a8bd_754e7058",
+        "filename": "lineage-proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2018-01-20T21:40:01Z",
+      "side": 1,
+      "message": "double definition in line 114+",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 40
+      },
+      "revId": "ba98f4151153f992ffe7ba268b3d13d14ad11977",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dff8de23_7b1022e3",
+        "filename": "lineage-proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2018-01-20T21:40:01Z",
+      "side": 1,
+      "message": "double definition",
+      "revId": "ba98f4151153f992ffe7ba268b3d13d14ad11977",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
