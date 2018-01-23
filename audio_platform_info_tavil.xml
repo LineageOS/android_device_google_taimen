@@ -63,6 +63,7 @@
         <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="4" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
         <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />
+        <usecase name="USECASE_INCALL_MUSIC_UPLINK" type="out" id="27" />
     </pcm_ids>
     <config_params>
         <param key="input_mic_max_count" value="3"/>
