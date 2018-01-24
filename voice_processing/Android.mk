@@ -19,9 +19,8 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := voice_processing_descriptors.c
-LOCAL_HEADER_LIBRARIES += \
-    libhardware_headers \
-    android.hardware.audio.effect.legacy@2.0
+LOCAL_C_INCLUDES += $(call include-path-for, audio-effects)
+LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_MULTILIB := $(AUDIOSERVER_MULTILIB)
 LOCAL_MODULE := libqcomvoiceprocessingdescriptors
 LOCAL_MODULE_RELATIVE_PATH := soundfx
