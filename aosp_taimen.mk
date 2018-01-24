@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     Dialer \
     Launcher3 \
     WallpaperPicker \
-    netutils-wrapper-1.0
+    netutils-wrapper-1.0 \
+    vndk_package
 
 PRODUCT_COPY_FILES += \
     device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
