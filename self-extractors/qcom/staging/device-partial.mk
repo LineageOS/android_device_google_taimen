@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# AOSP packages required by the blobs
+PRODUCT_PACKAGES := \
+    com.android.ims.rcsmanager.xml \
+    com.android.ims.rcsmanager
+
 #  blob(s) necessary for Taimen hardware
 PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/ATT_profiles.xml:system/etc/cne/Nexus/ATT/ATT_profiles.xml:qcom \
@@ -21,9 +26,7 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/dnd.sound_model:system/etc/firmware/dnd.sound_model:qcom \
     vendor/qcom/taimen/proprietary/music_detector.descriptor:system/etc/firmware/music_detector.descriptor:qcom \
     vendor/qcom/taimen/proprietary/music_detector.sound_model:system/etc/firmware/music_detector.sound_model:qcom \
-    vendor/qcom/taimen/proprietary/com.android.ims.rcsmanager.xml:system/etc/permissions/com.android.ims.rcsmanager.xml:qcom \
     vendor/qcom/taimen/proprietary/cneapiclient.jar:system/framework/cneapiclient.jar:qcom \
-    vendor/qcom/taimen/proprietary/com.android.ims.rcsmanager.jar:system/framework/com.android.ims.rcsmanager.jar:qcom \
     vendor/qcom/taimen/proprietary/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar:qcom \
     vendor/qcom/taimen/proprietary/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar:qcom \
     vendor/qcom/taimen/proprietary/embmslibrary.jar:system/framework/embmslibrary.jar:qcom \
