@@ -33,8 +33,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/qcrilhook.jar:system/framework/qcrilhook.jar:qcom \
     vendor/qcom/taimen/proprietary/rcsimssettings.jar:system/framework/rcsimssettings.jar:qcom \
     vendor/qcom/taimen/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so:qcom \

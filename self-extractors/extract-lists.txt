@@ -19,8 +19,6 @@
             system/framework/qcrilhook.jar \
             system/framework/rcsimssettings.jar \
             system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
-            system/lib64/libaptX_encoder.so \
-            system/lib64/libaptXHD_encoder.so \
             system/lib64/libdiag_system.so \
             system/lib64/libimscamera_jni.so \
             system/lib64/libimsmedia_jni.so \
