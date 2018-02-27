@@ -134,3 +134,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
     device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+
+# GApps
+GAPPS_VARIANT := nano
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
