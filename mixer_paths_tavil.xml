@@ -996,6 +996,10 @@
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
+    <path name="mmap-playback handset">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
     <path name="mmap-playback speaker-and-headphones">
         <path name="mmap-playback speaker" />
         <path name="mmap-playback" />
