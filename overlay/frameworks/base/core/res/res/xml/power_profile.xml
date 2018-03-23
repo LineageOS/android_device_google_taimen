@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <!-- All values are in mAh except as noted -->
-
-    <!-- Nothing -->
-    <item name="none">0</item>
+    <!-- All values are in mA except as noted -->
 
     <!-- This is the battery capacity in mAh -->
     <item name="battery.capacity">3520</item>
@@ -168,39 +165,27 @@
          minute. -->
     <item name="camera.avg">831.870</item>
 
-    <!-- Additional power used when audio decoding/encoding via DSP -->
-    <item name="dsp.audio">139.047</item>
+    <!-- Additional power used when video is playing -->
+    <item name="video">21.29</item>
+    <!-- Additional power used when audio is playing -->
+    <item name="audio">74.758</item>
 
-    <!-- Additional power used when GPS is acquiring a signal -->
-    <item name="gps.on">30</item>
-
-    <!-- Idle Receive current for wifi radio in mA.-->
+    <!-- Idle current for wifi radio in mA.-->
     <item name="wifi.controller.idle">1</item>
     <!-- Rx current for wifi radio in mA.-->
     <item name="wifi.controller.rx">125</item>
     <!-- Tx current for wifi radio in mA-->
     <item name="wifi.controller.tx">350</item>
-    <!-- Operating volatage for wifi radio in mV.-->
+    <!-- Operating voltage for wifi radio in mV.-->
     <item name="wifi.controller.voltage">3700</item>
-
-    <!-- Additional power used when cellular radio is transmitting/receiving -->
-    <item name="radio.active">50</item>
-    <!-- Additional power used when cellular radio is paging the tower -->
-    <item name="radio.scanning">5</item>
-    <!-- Additional power used when the cellular radio is on. Multi-value entry,
-         one per signal strength (no signal, weak, moderate, strong) -->
-    <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
-        <value>6</value>       <!-- none -->
-        <value>5</value>       <!-- poor -->
-        <value>4</value>       <!-- moderate -->
-        <value>3</value>       <!-- good -->
-        <value>3</value>       <!-- great -->
-    </array>
 
     <!-- Cellular modem related values.-->
     <item name="modem.controller.sleep">0</item>
+    <!-- Idle current for modem in mA.-->
     <item name="modem.controller.idle">110</item>
+    <!-- Rx current for modem in mA.-->
     <item name="modem.controller.rx">128</item>
+    <!-- Tx current for modem in mA.-->
     <array name="modem.controller.tx"> <!-- Strength 0 to 4 -->
         <value>1</value>
         <value>5</value>
@@ -208,6 +193,7 @@
         <value>100</value>
         <value>249</value>
     </array>
+    <!-- Operating voltage for modem in mV.-->
     <item name="modem.controller.voltage">3700</item>
 
     <!-- GPS related values.-->
