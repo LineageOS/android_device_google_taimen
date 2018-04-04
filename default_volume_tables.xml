@@ -65,6 +65,13 @@
         <point>60,-2100</point>
         <point>100,-1000</point>
     </reference>
+    <reference name="TAIMEN_DEFAULT_HEARING_AID_VOLUME_CURVE">
+    <!-- Default Hearing Aid Volume Curve -->
+        <point>1,-12700</point>
+        <point>20,-8000</point>
+        <point>60,-4000</point>
+        <point>100,0</point>
+    </reference>
     <!-- ******************************* -->
     <!-- Non-mutable volume curves below -->
      <reference name="TAIMEN_DEFAULT_NON_MUTABLE_SPEAKER_VOLUME_CURVE">
@@ -93,6 +100,14 @@
     </reference>
     <reference name="TAIMEN_DEFAULT_NON_MUTABLE_VOLUME_CURVE">
         <point>0,-5800</point>
+        <point>100,0</point>
+    </reference>
+    <reference name="TAIMEN_DEFAULT_NON_MUTABLE_HEARING_AID_VOLUME_CURVE">
+    <!-- Default non-mutable Hearing Aid Volume Curve -->
+    <!--     based on TAIMEN_DEFAULT_HEARING_AID_VOLUME_CURVE -->
+        <point>0,-12700</point>
+        <point>20,-8000</point>
+        <point>60,-4000</point>
         <point>100,0</point>
     </reference>
 </volumes>
