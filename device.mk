@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/touchscreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touchscreen.idc
 
+# Keymaster configuration
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
 # Enable modem logging
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -121,4 +125,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable Perfetto traced
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.traced.enable=1
+
+# Early phase offset for SurfaceFlinger (b/75985430)
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.early_phase_offset_ns=5000000
 
