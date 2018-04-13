@@ -120,8 +120,11 @@
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">98</integer>
 
-    <!-- Default screen brightness for VR setting. Default value: 0x56 => 86. -->
-    <integer name="config_screenBrightnessForVrSettingDefault">86</integer>
+    <!-- Default screen brightness for VR setting. Default value: 0x8c => 140. -->
+    <integer name="config_screenBrightnessForVrSettingDefault">140</integer>
+
+    <!-- Minimum screen brightness for VR setting. Default value: 0x8c => 140. -->
+    <integer name="config_screenBrightnessForVrSettingMinimum">140</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -295,6 +298,4 @@
 
     <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
     <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
-
-
   </resources>
