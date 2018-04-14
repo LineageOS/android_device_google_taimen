@@ -99,6 +99,15 @@
       <app uc_type="PCM_CAPTURE"  mode="default" bit_width="24" id="69940" max_rate="96000" />
       <app uc_type="PCM_CAPTURE"  mode="voip" bit_width="16" id="69945" max_rate="48000" />
     </app_types>
+    <!-- TODO: Fake microphone characteristics data, need to populate with actual data -->
+    <microphone_characteristics>
+        <microphone valid_mask="31" device_id="builtin_mic_1" type="AUDIO_DEVICE_IN_BUILTIN_MIC" address="bottom" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+            group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="3" frequencies="1.0,2.0,3.0"
+            responses= "2.0,3.0,4.0" sensitivity="100.0" max_spl="110.0" min_spl="1.0" orientation="1.0,0.0,0.0" geometric_location="1.0,0.2,0.3" />
+        <microphone valid_mask="31" device_id="builtin_mic_2" type="AUDIO_DEVICE_IN_BACK_MIC" address="back" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+            group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="3" frequencies="11.0,12.0,13.0"
+            responses="12.0,13.0,14.0" sensitivity="10.0" max_spl="150.0" min_spl="10.0" orientation="0.0,1.0,0.0" geometric_location="0.5,1.2,0.1" />
+    </microphone_characteristics>
 </audio_platform_info>
 
 
