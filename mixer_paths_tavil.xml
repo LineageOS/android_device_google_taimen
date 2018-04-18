@@ -200,7 +200,6 @@
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia16" value="0" />
     <ctl name="MultiMedia1 Mixer USB_AUDIO_TX" value="0" />
-    <ctl name="MultiMedia3 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia5 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia8 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
@@ -614,6 +613,13 @@
     <ctl name="Stereo RDAC Playback Volume" value="15" />
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
+
+    <!-- mmap record init -->
+    <ctl name="MultiMedia3 Mixer SLIM_0_TX" value="0" />
+    <ctl name="MultiMedia3 Mixer AUX_PCM_UL_TX" value="0" />
+    <ctl name="MultiMedia3 Mixer TERT_MI2S_TX" value="0" />
+    <ctl name="MultiMedia3 Mixer USB_AUDIO_TX" value="0" />
+    <!-- mmap record init end -->
 
     <!-- Speaker swap -->
     <ctl name="Swap channel" value="0" />
