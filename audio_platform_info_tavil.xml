@@ -59,6 +59,7 @@
         <usecase name="USECASE_VOICEMMODE2_CALL" type="in" id="19" />
         <usecase name="USECASE_VOICEMMODE2_CALL" type="out" id="19" />
         <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="4" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="6" />
         <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="7" />
         <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="4" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
