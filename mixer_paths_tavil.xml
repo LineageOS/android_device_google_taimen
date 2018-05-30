@@ -886,6 +886,10 @@
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia2" value="1" />
     </path>
 
+    <path name="hifi-playback handset-hac">
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia2" value="1" />
+    </path>
+
     <path name="hifi-playback display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia2" value="1" />
     </path>
@@ -938,6 +942,10 @@
 
     <path name="compress-offload-playback handset">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback handset-hac">
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback display-port">
@@ -1006,17 +1014,21 @@
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
+    <path name="mmap-playback handset-hac">
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
     <path name="mmap-playback speaker-and-headphones">
         <path name="mmap-playback speaker" />
         <path name="mmap-playback" />
     </path>
 
     <path name="mmap-playback bt-sco">
-        <ctl name="AUX_PCM_RX Audio Mixer MultiMedia3" value="1" />
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="mmap-playback bt-sco-wb">
-        <ctl name="AUX PCM SampleRate" value="16000" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="mmap-playback bt-sco" />
     </path>
 
@@ -1861,6 +1873,12 @@
         <path name="handset-mic" />
     </path>
 
+    <path name="bt-sco-headset">
+    </path>
+
+    <path name="bt-sco-headset-wb">
+    </path>
+
     <path name="speaker-and-bt-sco">
         <path name="speaker"/>
         <path name="bt-sco-headset"/>
@@ -1881,13 +1899,7 @@
         <path name="bt-sco-headset-wb"/>
     </path>
 
-    <path name="bt-sco-headset">
-    </path>
-
     <path name="bt-sco-mic">
-    </path>
-
-    <path name="bt-sco-headset-wb">
     </path>
 
     <path name="bt-sco-mic-wb">
@@ -2116,6 +2128,10 @@
 
     <path name="audio-playback-voip usb-headset">
       <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="audio-playback-voip handset-hac">
+      <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
 <!-- VoIP Tx settings -->
