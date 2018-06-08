@@ -31,15 +31,18 @@ on boot
 on init && property:ro.boot.revision=*
     setprop ro.boot.hardware.revision ${ro.boot.revision}
 
-on property:init.svc.fps_hal=running && property:ro.boot.revision=rev_0
-    stop fps_hal
+on property:init.svc.vendor.fps_hal=running && property:ro.boot.revision=rev_0
+    stop vendor.fps_hal
 
 on property:sys.all.modules.ready=1
     # Update touch firmware if required
     write /sys/devices/virtual/input/ftm4_touch/check_fw 1
 
-on property:sys.retaildemo.enabled=* && property:sys.all.modules.ready=1
-    write /sys/module/lge_battery/parameters/demo_mode ${sys.retaildemo.enabled}
-
 on property:ro.boot.hardware.display=2-1
     setprop sys.display.low_persistence_mode_brightness 255
+
+on property:persist.vendor.charge.stop.level=* && property:sys.all.modules.ready=1
+    write /sys/module/lge_battery/parameters/charge_stop_level ${persist.vendor.charge.stop.level}
+
+on property:persist.vendor.charge.start.level=* && property:sys.all.modules.ready=1
+    write /sys/module/lge_battery/parameters/charge_start_level ${persist.vendor.charge.start.level}
