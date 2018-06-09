@@ -17,5 +17,8 @@
 <resources>
     <!-- Whether to show a preference item for regulatory information in About phone -->
     <bool name="config_show_regulatory_info">true</bool>
+
+    <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
+    <bool name="config_haveHigherAspectRatioScreen" translatable="false">true</bool>
 </resources>
 
