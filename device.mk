@@ -138,3 +138,7 @@ PRODUCT_COPY_FILES += \
 # ModemService
 PRODUCT_COPY_FILES += \
     device/google/taimen/whitelist_modemservice.xml:system/etc/sysconfig/whitelist_modemservice.xml
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2018-06-01
