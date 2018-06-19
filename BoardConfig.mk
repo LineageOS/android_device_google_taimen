@@ -25,7 +25,6 @@ BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 earlycon=msm_serial_dm,0xc1b00
 include device/google/wahoo/BoardConfig.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
-BOARD_AVB_ENABLE := true
 
 # sepolicy
 BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
