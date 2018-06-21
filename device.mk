@@ -132,5 +132,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Early phase offset for SurfaceFlinger (b/75985430)
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_phase_offset_ns=5000000
+    debug.sf.early_phase_offset_ns=1000000
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.early_gl_phase_offset_ns=1000000
 
