@@ -64,6 +64,11 @@ lib/librcc.so
 # LineageOS blobs: Additional blobs #
 #####################################
 
+# Camera
+-app/EaselServicePrebuilt/EaselServicePrebuilt.apk
+etc/permissions/com.google.android.camera.experimental2017.xml
+-framework/com.google.android.camera.experimental2017.jar
+
 # Carrier
 -priv-app/CarrierServices/CarrierServices.apk:priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -priv-app/CarrierSetup/CarrierSetup.apk:priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
