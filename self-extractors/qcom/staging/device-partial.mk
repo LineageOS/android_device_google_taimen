@@ -12,11 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# AOSP packages required by the blobs
-PRODUCT_PACKAGES := \
-    com.android.ims.rcsmanager.xml \
-    com.android.ims.rcsmanager
-
 #  blob(s) necessary for Taimen hardware
 PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/ATT_profiles.xml:system/etc/cne/Nexus/ATT/ATT_profiles.xml:qcom \
