@@ -151,6 +151,8 @@
         <value>212.147</value> <!-- 2457 MHz CPU speed -->
     </array>
 
+    <!-- Additional power used when screen is ambient mode -->
+    <item name="ambient.on">19</item>
     <!-- Additional power used when screen is turned on at minimum brightness -->
     <item name="screen.on">152.118</item>
     <!-- Additional power used when screen is at maximum brightness, compared to
