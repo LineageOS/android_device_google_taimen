@@ -22,19 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/google/taimen/device.mk)
 $(call inherit-product-if-exists, vendor/google_devices/taimen/proprietary/device-vendor.mk)
 
-PRODUCT_PACKAGES += \
-    vndk_package
-
 PRODUCT_COPY_FILES += \
     device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
-
-# Keep the VNDK APEX in /system partition for Official builds as these branches are
-# expected to have stable API/ABI surfaces, move to /vendor if with GMS to save space.
-ifeq ($(WITH_GMS),true)
-  PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
-endif
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
