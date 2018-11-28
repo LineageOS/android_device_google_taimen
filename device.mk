@@ -59,6 +59,11 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     device/google/taimen/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
+# Thermal HAL
+PRODUCT_COPY_FILES += \
+    device/google/taimen/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+    device/google/taimen/thermal_info_config_evt.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_evt.json
+
 # Audio
 PRODUCT_COPY_FILES += \
     device/google/taimen/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_taimen.xml \

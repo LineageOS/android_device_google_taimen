@@ -46,3 +46,9 @@ on property:persist.vendor.charge.stop.level=* && property:sys.all.modules.ready
 
 on property:persist.vendor.charge.start.level=* && property:sys.all.modules.ready=1
     write /sys/module/lge_battery/parameters/charge_start_level ${persist.vendor.charge.start.level}
+
+on late-init && property:ro.boot.revision=rev_a
+    setprop vendor.thermal.config thermal_info_config_evt.json
+
+on late-init && property:ro.boot.revision=rev_b
+    setprop vendor.thermal.config thermal_info_config_evt.json
