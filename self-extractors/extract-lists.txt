@@ -39,6 +39,5 @@
             system/lib/libiperf.so \
             system/lib/librcc.so \
             system/xbin/iperf3 \
-            system/xbin/sanitizer-status \
             "
     ;;
