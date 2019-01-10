@@ -48,4 +48,3 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/libiperf.so:system/lib/libiperf.so:qcom \
     vendor/qcom/taimen/proprietary/librcc.so:system/lib/librcc.so:qcom \
     vendor/qcom/taimen/proprietary/iperf3:system/xbin/iperf3:qcom \
-    vendor/qcom/taimen/proprietary/sanitizer-status:system/xbin/sanitizer-status:qcom \
