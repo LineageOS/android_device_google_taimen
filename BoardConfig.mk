@@ -27,15 +27,8 @@ BOARD_AVB_ENABLE := true
 # sepolicy
 BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
-ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
-# if TARGET_PRODUCT == taimen_gcc
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/gcc/touch_core_base.ko \
-    device/google/wahoo-kernel/gcc/ftm4.ko \
-    device/google/wahoo-kernel/gcc/sw49408.ko \
-    device/google/wahoo-kernel/gcc/lge_battery.ko \
-    device/google/wahoo-kernel/gcc/wlan.ko
-else ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
+# Kernel modules
+ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_kasan
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/touch_core_base.ko \
@@ -43,14 +36,6 @@ BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/sw49408.ko \
     device/google/wahoo-kernel/kasan/lge_battery.ko \
     device/google/wahoo-kernel/kasan/wlan.ko
-else ifeq (,$(filter-out taimen_kcfi, $(TARGET_PRODUCT)))
-# if TARGET_PRODUCT == taimen_kcfi
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/kcfi/touch_core_base.ko \
-    device/google/wahoo-kernel/kcfi/ftm4.ko \
-    device/google/wahoo-kernel/kcfi/sw49408.ko \
-    device/google/wahoo-kernel/kcfi/lge_battery.ko \
-    device/google/wahoo-kernel/kcfi/wlan.ko
 else ifeq (,$(filter-out taimen_kernel_debug_memory, $(TARGET_PRODUCT)))
 # if TARGET == taimen_kernel_debug_memory
 BOARD_VENDOR_KERNEL_MODULES += \
