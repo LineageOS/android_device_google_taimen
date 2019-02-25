@@ -26,7 +26,6 @@
             system/lib64/lib-imsvtextutils.so \
             system/lib64/lib-imsvt.so \
             system/lib64/lib-imsvtutils.so \
-            system/lib64/libiperf.so \
             system/lib64/librcc.so \
             system/lib/com.qualcomm.qti.imsrtpservice@1.0.so \
             system/lib/libdiag_system.so \
@@ -36,8 +35,6 @@
             system/lib/lib-imsvtextutils.so \
             system/lib/lib-imsvt.so \
             system/lib/lib-imsvtutils.so \
-            system/lib/libiperf.so \
             system/lib/librcc.so \
-            system/xbin/iperf3 \
             "
     ;;
