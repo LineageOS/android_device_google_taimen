@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libiperf.so:system/lib64/libiperf.so:qcom \
     vendor/qcom/taimen/proprietary/lib64/librcc.so:system/lib64/librcc.so:qcom \
     vendor/qcom/taimen/proprietary/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
     vendor/qcom/taimen/proprietary/libdiag_system.so:system/lib/libdiag_system.so:qcom \
@@ -45,6 +44,4 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so:qcom \
     vendor/qcom/taimen/proprietary/lib-imsvt.so:system/lib/lib-imsvt.so:qcom \
     vendor/qcom/taimen/proprietary/lib-imsvtutils.so:system/lib/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/libiperf.so:system/lib/libiperf.so:qcom \
     vendor/qcom/taimen/proprietary/librcc.so:system/lib/librcc.so:qcom \
-    vendor/qcom/taimen/proprietary/iperf3:system/xbin/iperf3:qcom \
