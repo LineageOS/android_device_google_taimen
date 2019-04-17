@@ -159,11 +159,21 @@
                 "NAN",
                 "NAN",
                 "NAN",
-                "NAN",
+                "70.0",
                 "NAN"
             ],
+            "HotHysteresis":[
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                5.0,
+                0.0
+            ],
             "VrThreshold":"NAN",
-            "Multiplier":0.1
+            "Multiplier":0.1,
+            "Monitor":true
         },
         {
             "Name":"bd_therm",
