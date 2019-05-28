@@ -25,7 +25,7 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
 # sepolicy
-BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
 ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_gcc
