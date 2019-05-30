@@ -26,7 +26,7 @@ BOARD_AVB_ENABLE := true
 BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
 # sepolicy
-BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
 # Kernel modules
 ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
