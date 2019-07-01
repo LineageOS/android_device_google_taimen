@@ -23,19 +23,13 @@ include device/google/wahoo/BoardConfig.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
+BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
 # sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
-ifeq (,$(filter-out taimen_gcc, $(TARGET_PRODUCT)))
-# if TARGET_PRODUCT == taimen_gcc
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/gcc/touch_core_base.ko \
-    device/google/wahoo-kernel/gcc/ftm4.ko \
-    device/google/wahoo-kernel/gcc/sw49408.ko \
-    device/google/wahoo-kernel/gcc/lge_battery.ko \
-    device/google/wahoo-kernel/gcc/wlan.ko
-else ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
+# Kernel modules
+ifeq (,$(filter-out taimen_kasan, $(TARGET_PRODUCT)))
 # if TARGET_PRODUCT == taimen_kasan
 BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/touch_core_base.ko \
@@ -43,14 +37,6 @@ BOARD_VENDOR_KERNEL_MODULES += \
     device/google/wahoo-kernel/kasan/sw49408.ko \
     device/google/wahoo-kernel/kasan/lge_battery.ko \
     device/google/wahoo-kernel/kasan/wlan.ko
-else ifeq (,$(filter-out taimen_kcfi, $(TARGET_PRODUCT)))
-# if TARGET_PRODUCT == taimen_kcfi
-BOARD_VENDOR_KERNEL_MODULES += \
-    device/google/wahoo-kernel/kcfi/touch_core_base.ko \
-    device/google/wahoo-kernel/kcfi/ftm4.ko \
-    device/google/wahoo-kernel/kcfi/sw49408.ko \
-    device/google/wahoo-kernel/kcfi/lge_battery.ko \
-    device/google/wahoo-kernel/kcfi/wlan.ko
 else ifeq (,$(filter-out taimen_kernel_debug_memory, $(TARGET_PRODUCT)))
 # if TARGET == taimen_kernel_debug_memory
 BOARD_VENDOR_KERNEL_MODULES += \
@@ -102,6 +88,11 @@ BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/
 # Rounded corners recovery UI. 105px = 30dp * 3.5 density, where 30dp comes from
 # rounded_corner_radius in overlay/frameworks/base/packages/SystemUI/res/values/dimens.xml.
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
+
+TARGET_RECOVERY_UI_LIB := \
+    librecovery_ui_taimen \
+    libbootloader_message \
+    libfstab
 
 # VTS DTBO Verification. This kernel cmdline parameter should be added by the bootloader
 # for all future devices.
