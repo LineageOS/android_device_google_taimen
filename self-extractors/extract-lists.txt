@@ -5,6 +5,7 @@
     ;;
   qcom)
     TO_EXTRACT="\
+            system/app/ims/ims.apk \
             system/etc/cne/Nexus/ATT/ATT_profiles.xml \
             system/etc/cne/Nexus/ROW/ROW_profiles.xml \
             system/etc/cne/Nexus/VZW/VZW_profiles.xml \
