@@ -67,7 +67,6 @@ lib64/libeaselcontrol.amber.so
 # Radio and IMS
 -app/embms/embms.apk
 -app/ims/ims.apk
--app/Tycho/Tycho.apk;PRESIGNED
 -app/uceShimService/uceShimService.apk
 -app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 -app/vzw_msdc_api/vzw_msdc_api.apk;PRESIGNED
