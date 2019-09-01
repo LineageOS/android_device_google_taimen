@@ -56,7 +56,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 write_taimen_headers
 
 # The standard blobs
-write_makefiles "$MY_DIR"/lineage-proprietary-files.txt
+write_makefiles "$MY_DIR"/lineage-proprietary-files.txt true
 
 # Done
 write_footers
