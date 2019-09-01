@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The LineageOS Project
+# Copyright 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,5 +48,46 @@ $(DM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /system/lib/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(DM_SYMLINKS)
+
+RFS_APQ_DIRS := gnss
+RFS_APQ_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/rfs/apq/,$(notdir $(RFS_APQ_DIRS)))
+$(RFS_APQ_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS APQ folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $@/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/lpass $@/ramdumps
+	$(hide) ln -sf /persist/rfs/msm/adsp $@/readwrite
+	$(hide) ln -sf /persist/rfs/shared $@/shared
+	$(hide) ln -sf /persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /firmware $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
+
+RFS_MDM_DIRS := adsp mpss slpi tn
+RFS_MDM_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/rfs/mdm/,$(notdir $(RFS_MDM_DIRS)))
+$(RFS_MDM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MDM folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $@/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/lpass $@/ramdumps
+	$(hide) ln -sf /persist/rfs/msm/adsp $@/readwrite
+	$(hide) ln -sf /persist/rfs/shared $@/shared
+	$(hide) ln -sf /persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /firmware $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
+
+RFS_MSM_DIRS := adsp mpss slpi
+RFS_MSM_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/rfs/msm/,$(notdir $(RFS_MSM_DIRS)))
+$(RFS_MSM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MSM folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $@/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/lpass $@/ramdumps
+	$(hide) ln -sf /persist/rfs/msm/adsp $@/readwrite
+	$(hide) ln -sf /persist/rfs/shared $@/shared
+	$(hide) ln -sf /persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /firmware $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
+
+ALL_DEFAULT_INSTALLED_MODULES += $(RFS_APQ_SYMLINKS) $(RFS_MDM_SYMLINKS) $(RFS_MSM_SYMLINKS)
 
 endif
