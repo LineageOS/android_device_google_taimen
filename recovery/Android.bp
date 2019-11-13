@@ -27,7 +27,8 @@ cc_library_static {
         "recovery_ui.cpp",
     ],
 
-    static_libs: [
+    whole_static_libs: [
+        "libmisc_writer",
         "libbootloader_message",
     ],
 
