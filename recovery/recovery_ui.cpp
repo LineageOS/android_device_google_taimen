@@ -18,17 +18,18 @@
 
 #include <android-base/logging.h>
 #include <bootloader_message/bootloader_message.h>
+#include <misc_writer/misc_writer.h>
 #include <recovery_ui/device.h>
 #include <recovery_ui/screen_ui.h>
 
+using android::hardware::google::pixel::MiscWriter;
+using android::hardware::google::pixel::MiscWriterActions;
+
 // Wipes the provisioned flag as part of data wipe.
 static bool WipeProvisionedFlag() {
-    // Must be consistent with the one in init.hardware.rc (10-byte `theme-dark`).
-    const std::string wipe_str(10, '\x00');
-    constexpr size_t kProvisionedFlagOffsetInVendorSpace = 0;
-    if (std::string err; !WriteMiscPartitionVendorSpace(
-            wipe_str.data(), wipe_str.size(), kProvisionedFlagOffsetInVendorSpace, &err)) {
-        LOG(ERROR) << "Failed to write wipe string: " << err;
+    MiscWriter misc_writer(MiscWriterActions::kClearDarkThemeFlag);
+    if (!misc_writer.PerformAction()) {
+        LOG(ERROR) << "Failed to clear the dark theme flag";
         return false;
     }
     LOG(INFO) << "Provisioned flag wiped successful";
