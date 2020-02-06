@@ -148,7 +148,8 @@
                 60.0
             ],
             "VrThreshold":"NAN",
-            "Multiplier":0.001
+            "Multiplier":0.001,
+            "Monitor":true
         },
         {
             "Name":"usb_port_temp",
