@@ -31,9 +31,6 @@ $(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PROD
 endif
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay
 
-PRODUCT_PACKAGES += \
-    TelephonyOverlay2017Taimen
-
 # Audio
 PRODUCT_COPY_FILES += \
     device/google/taimen/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
