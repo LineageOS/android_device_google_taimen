@@ -18,7 +18,6 @@
             system/framework/cneapiclient.jar \
             system/framework/com.quicinc.cne.api-V1.0-java.jar \
             system/framework/com.quicinc.cne.jar \
-            system/framework/embmslibrary.jar \
             system/framework/qcrilhook.jar \
             system/framework/rcsimssettings.jar \
             system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
