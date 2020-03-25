@@ -14,7 +14,6 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 PRODUCT_NAME := lineage_taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
-TARGET_MANUFACTURER := LG
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
