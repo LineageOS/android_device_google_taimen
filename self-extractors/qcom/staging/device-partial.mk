@@ -12,11 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/taimen/proprietary
+
 # AOSP packages required by the blobs
 PRODUCT_PACKAGES := \
     ims
 
 #  blob(s) necessary for Taimen hardware
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.imsrtpservice@1.0 \
+    libdiag_system \
+    libimscamera_jni \
+    libimsmedia_jni \
+    lib-imsvideocodec \
+    lib-imsvtextutils \
+    lib-imsvt \
+    lib-imsvtutils \
+    librcc \
+
 PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/ATT_profiles.xml:system/etc/cne/Nexus/ATT/ATT_profiles.xml:qcom \
     vendor/qcom/taimen/proprietary/ROW_profiles.xml:system/etc/cne/Nexus/ROW/ROW_profiles.xml:qcom \
@@ -30,21 +44,4 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/taimen/proprietary/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar:qcom \
     vendor/qcom/taimen/proprietary/qcrilhook.jar:system/framework/qcrilhook.jar:qcom \
     vendor/qcom/taimen/proprietary/rcsimssettings.jar:system/framework/rcsimssettings.jar:qcom \
-    vendor/qcom/taimen/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/lib64/librcc.so:system/lib64/librcc.so:qcom \
-    vendor/qcom/taimen/proprietary/com.qualcomm.qti.imsrtpservice@1.0.so:system/lib/com.qualcomm.qti.imsrtpservice@1.0.so:qcom \
-    vendor/qcom/taimen/proprietary/libdiag_system.so:system/lib/libdiag_system.so:qcom \
-    vendor/qcom/taimen/proprietary/libimscamera_jni.so:system/lib/libimscamera_jni.so:qcom \
-    vendor/qcom/taimen/proprietary/libimsmedia_jni.so:system/lib/libimsmedia_jni.so:qcom \
-    vendor/qcom/taimen/proprietary/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so:qcom \
-    vendor/qcom/taimen/proprietary/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so:qcom \
-    vendor/qcom/taimen/proprietary/lib-imsvt.so:system/lib/lib-imsvt.so:qcom \
-    vendor/qcom/taimen/proprietary/lib-imsvtutils.so:system/lib/lib-imsvtutils.so:qcom \
-    vendor/qcom/taimen/proprietary/librcc.so:system/lib/librcc.so:qcom \
+
