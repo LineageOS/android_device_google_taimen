@@ -176,7 +176,6 @@ product/lib64/libaptXHD_encoder.so
 product/lib64/libaptX_encoder.so
 -product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 -product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
--product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 -product/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
 -product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
