@@ -1,6 +1,3 @@
-vendor/app/embms/oem/vzw/config_params.xml
-vendor/app/embms/oem/vzw/provisioning_params.xml
-vendor/app/embms/oem/vzw/verizon_config_params.txt
 -vendor/app/ModemService/ModemService.apk
 -vendor/app/QtiTelephonyService/QtiTelephonyService.apk
 -vendor/app/TimeService/TimeService.apk
@@ -95,7 +92,6 @@ vendor/etc/msm_irqbalance.conf
 vendor/etc/perf-profile0.conf
 vendor/etc/permissions/cneapiclient.xml
 vendor/etc/permissions/com.quicinc.cne.xml
-vendor/etc/permissions/embms.xml
 vendor/etc/permissions/qcrilhook.xml
 vendor/etc/permissions/qti-vzw-ims-internal.xml
 vendor/etc/permissions/telephonyservice.xml

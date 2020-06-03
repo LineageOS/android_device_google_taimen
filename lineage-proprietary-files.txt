@@ -1,9 +1,6 @@
 -app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
 -app/ims/ims.apk
--app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
 -app/uceShimService/uceShimService.apk
--app/vzw_msdc_api/vzw_msdc_api.apk;PRESIGNED
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml
@@ -14,7 +11,6 @@ etc/firmware/music_detector.sound_model
 etc/permissions/com.android.vzwomatrigger.xml
 etc/permissions/com.customermobile.preload.vzw.xml
 etc/permissions/com.google.android.camera.experimental2017.xml
-etc/permissions/com.verizon.embms.xml
 etc/permissions/com.verizon.llkagent.xml
 etc/permissions/privapp-permissions-aosp_wahoo.xml
 etc/permissions/privapp-permissions-google.xml
@@ -24,7 +20,6 @@ etc/sysconfig/pixel_2017_exclusive.xml
 -framework/com.google.android.camera.experimental2017.jar
 -framework/com.quicinc.cne.api-V1.0-java.jar
 -framework/com.quicinc.cne.jar
--framework/embmslibrary.jar
 -framework/qcrilhook.jar
 -framework/rcsimssettings.jar
 -framework/vendor.qti.qcril.am-V1.0-java.jar
@@ -93,6 +88,7 @@ product/etc/CarrierSettings/fizz_ca.pb
 product/etc/CarrierSettings/freedommobile_ca.pb
 product/etc/CarrierSettings/h3_at.pb
 product/etc/CarrierSettings/h3_gb.pb
+product/etc/CarrierSettings/h3_se.pb
 product/etc/CarrierSettings/idea_in.pb
 product/etc/CarrierSettings/idmobile_gb.pb
 product/etc/CarrierSettings/kddi_jp.pb
@@ -112,6 +108,7 @@ product/etc/CarrierSettings/rakuten_jp.pb
 product/etc/CarrierSettings/rjio_in.pb
 product/etc/CarrierSettings/rogers_ca.pb
 product/etc/CarrierSettings/sfr_fr.pb
+product/etc/CarrierSettings/shaw_ca.pb
 product/etc/CarrierSettings/singtel_sg.pb
 product/etc/CarrierSettings/softbank_jp.pb
 product/etc/CarrierSettings/solomobile_ca.pb
@@ -131,6 +128,7 @@ product/etc/CarrierSettings/telia_no.pb
 product/etc/CarrierSettings/telia_se.pb
 product/etc/CarrierSettings/telstra_au.pb
 product/etc/CarrierSettings/telus_ca.pb
+product/etc/CarrierSettings/three_dk.pb
 product/etc/CarrierSettings/tim_it.pb
 product/etc/CarrierSettings/tmobile_nl.pb
 product/etc/CarrierSettings/tmobile_us.pb
