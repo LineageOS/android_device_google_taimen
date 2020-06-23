@@ -136,13 +136,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.click.duration=10 \
   ro.vibrator.hal.tick.duration=4 \
   ro.vibrator.hal.heavyclick.duration=12
-
-# Early phase offset for SurfaceFlinger (b/75985430)
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_phase_offset_ns=1500000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_app_phase_offset_ns=500000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_gl_phase_offset_ns=1500000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_gl_app_phase_offset_ns=15000000
