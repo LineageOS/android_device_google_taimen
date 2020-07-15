@@ -1,7 +1,7 @@
 -vendor/app/ModemService/ModemService.apk
 -vendor/app/QtiTelephonyService/QtiTelephonyService.apk
 -vendor/app/TimeService/TimeService.apk
--vendor/app/wahoo_gfxdrv/wahoo_gfxdrv.apk
+-vendor/app/wahoo_gfxdrv/wahoo_gfxdrv.apk;PRESIGNED
 vendor/bin/ATFWD-daemon
 vendor/bin/KmInstallKeybox
 vendor/bin/PktRspTest
