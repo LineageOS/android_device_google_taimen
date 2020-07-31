@@ -139,7 +139,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
     device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
-
-# ModemService
-PRODUCT_COPY_FILES += \
-    device/google/taimen/whitelist_modemservice.xml:system/etc/sysconfig/whitelist_modemservice.xml
