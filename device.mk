@@ -70,6 +70,9 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.audio.adm.buffering.ms=3
 PRODUCT_PROPERTY_OVERRIDES += audio_hal.period_multiplier=2
 PRODUCT_PROPERTY_OVERRIDES += af.fast_track_multiplier=1
 
+# Whether by default, the eSIM system UI, including that in SUW and Settings, will be shown.
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += esim.enable_esim_system_ui_by_default=false
+
 # Pro audio feature
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml
@@ -99,11 +102,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/touchscreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touchscreen.idc
 
+# Keymaster configuration
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
 # Enable modem logging
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.modem.diag.qdb=0\
     persist.sys.modem.diag.mdlog=true \
+    persist.sys.modem.diag.mdlog_br_num=5 \
     ro.radio.log_loc="/data/vendor/modem_dump" \
     ro.radio.log_prefix="modem_log_"
 endif
@@ -115,21 +123,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Vibrator HAL
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.click.duration=10 \
-  ro.vibrator.hal.tick.duration=4
+  ro.vibrator.hal.tick.duration=4 \
+  ro.vibrator.hal.heavyclick.duration=12
 
-# HWUI common settings
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.gradient_cache_size=1 \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.text_small_cache_width=1024 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024 \
-    ro.hwui.texture_cache_size=84 \
-    ro.hwui.layer_cache_size=64 \
-    ro.hwui.path_cache_size=32
+# Enable Perfetto traced
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.traced.enable=1
+
+# Early phase offset for SurfaceFlinger (b/75985430)
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    debug.sf.early_phase_offset_ns=1000000
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    debug.sf.early_gl_phase_offset_ns=1000000
 
 # Privileged app permissions
 PRODUCT_COPY_FILES += \

@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Get the full APNs
-PRODUCT_COPY_FILES := device/google/wahoo/apns-full-conf.xml:system/etc/apns-conf.xml
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -27,11 +24,14 @@ $(call inherit-product-if-exists, vendor/google_devices/taimen/proprietary/devic
 
 PRODUCT_PACKAGES += \
     Dialer \
-    Launcher3 \
-    WallpaperPicker
+    Launcher3QuickStep \
+    WallpaperPicker \
+    netutils-wrapper-1.0 \
+    vndk_package
 
 PRODUCT_COPY_FILES += \
-    device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
 
