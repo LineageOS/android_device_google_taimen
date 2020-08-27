@@ -137,6 +137,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.tick.duration=4 \
   ro.vibrator.hal.heavyclick.duration=12
 
-# Enable Perfetto traced
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.traced.enable=1
