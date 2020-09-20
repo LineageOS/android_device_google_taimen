@@ -29,4 +29,14 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+TAS2557_BIN := tas2557_cal.bin
+TAS2557_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(TAS2557_BIN)))
+$(TAS2557_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating tas2557_cal.bin symlink: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /persist/audio/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(TAS2557_SYMLINKS)
+
 endif
