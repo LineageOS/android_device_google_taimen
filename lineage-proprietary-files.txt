@@ -1,6 +1,7 @@
 -app/datastatusnotification/datastatusnotification.apk
 -app/ims/ims.apk
 -app/uceShimService/uceShimService.apk
+bin/move_widevine_data.sh
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml
@@ -55,6 +56,7 @@ lib64/librcc.so
 lib64/vendor.qti.qcril.am@1.0.so
 -priv-app/CNEService/CNEService.apk
 -priv-app/LLKAgent/LLKAgent.apk
+-priv-app/OemDmTrigger/OemDmTrigger.apk
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
@@ -171,6 +173,7 @@ product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
 product/lib64/libaptXHD_encoder.so
 product/lib64/libaptX_encoder.so
+product/lib64/libsketchology_native.so
 -product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 -product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
 -product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
