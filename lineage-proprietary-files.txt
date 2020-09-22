@@ -6,6 +6,7 @@
 -app/ims/ims.apk
 -app/uceShimService/uceShimService.apk
 -app/vzw_msdc_api/vzw_msdc_api.apk;PRESIGNED
+bin/move_widevine_data.sh
 etc/ambient/matcher_tah.leveldb
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
