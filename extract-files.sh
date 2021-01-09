@@ -48,6 +48,15 @@ else
   fi
 fi
 
+function blob_fixup() {
+    case "${1}" in
+    # Fix typo in qcrilmsgtunnel whitelist
+    product/etc/sysconfig/nexus.xml)
+        sed -i 's/qulacomm/qualcomm/' "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
