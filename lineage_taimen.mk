@@ -22,4 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/taimen/taimen:11/RP1A.201005.004.A1/6934943:user/release-keys
 
-$(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
+$(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
