@@ -170,6 +170,7 @@ product/etc/permissions/obdm_permissions.xml
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/split-permissions-google.xml
 product/etc/permissions/vzw_mvs_permissions.xml
+product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 product/etc/sysconfig/nexus.xml
 product/etc/sysconfig/pixel_experience_2017.xml
 product/etc/sysconfig/whitelist_com.android.omadm.service.xml
