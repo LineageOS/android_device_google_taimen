@@ -167,7 +167,7 @@ product/etc/permissions/com.verizon.apn.xml
 product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
 product/etc/permissions/obdm_permissions.xml
-product/etc/permissions/privapp-permissions-google-p.xml
+product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
 product/etc/permissions/split-permissions-google.xml
 product/etc/permissions/vzw_mvs_permissions.xml
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
@@ -206,7 +206,7 @@ product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 -product/priv-app/obdm_stub/obdm_stub.apk;PRESIGNED
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
-system_ext/etc/permissions/privapp-permissions-google-se.xml
+system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-google.xml
 -system_ext/framework/RadioConfigLib.jar
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 -system_ext/priv-app/CarrierSetup/CarrierSetup.apk
