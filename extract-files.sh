@@ -59,6 +59,18 @@ function blob_fixup() {
     product/etc/sysconfig/nexus.xml)
         sed -i 's/qulacomm/qualcomm/' "${2}"
         ;;
+    system/lib/lib-imsvideocodec.so)
+        "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+        ;;
+    system/lib/libimsmedia_jni.so)
+        "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+        ;;
+    system/lib64/lib-imsvideocodec.so)
+        "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+        ;;
+    system/lib64/libimsmedia_jni.so)
+        "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+        ;;
     esac
 }
 
