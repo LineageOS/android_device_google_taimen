@@ -59,6 +59,11 @@ function blob_fixup() {
     product/etc/sysconfig/nexus.xml)
         sed -i 's/qulacomm/qualcomm/' "${2}"
         ;;
+    system/lib/lib-imsvideocodec.so | system/lib/libimsmedia_jni.so | system/lib64/lib-imsvideocodec.so | system/lib64/libimsmedia_jni.so)
+        for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
+            "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
+        done
+        ;;
     esac
 }
 
