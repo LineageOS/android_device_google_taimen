@@ -2,7 +2,6 @@
 ## are from RP1A.201005.004.A1, Dec 2020.
 
 app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
-app/datastatusnotification/datastatusnotification.apk
 app/ims/ims.apk
 app/uceShimService/uceShimService.apk
 app/vzw_msdc_api/vzw_msdc_api.apk
