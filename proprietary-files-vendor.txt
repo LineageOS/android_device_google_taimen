@@ -280,7 +280,6 @@ vendor/lib/egl/libGLESv1_CM_adreno.so;SYMLINK=vendor/lib/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so;SYMLINK=vendor/lib/libq3dtools_esx.so
-vendor/lib/hw/activity_recognition.msm8998.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/hw/gatekeeper.msm8998.so
@@ -572,7 +571,6 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so;SYMLINK=vendor/lib64/libGLESv1_CM_adreno
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so;SYMLINK=vendor/lib64/libq3dtools_esx.so
-vendor/lib64/hw/activity_recognition.msm8998.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
