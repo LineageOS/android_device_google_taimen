@@ -41,8 +41,6 @@ vendor/bin/oemlock-bridge-client
 vendor/bin/oemlock_provision
 vendor/bin/pd-mapper
 vendor/bin/pktlogconf
-vendor/bin/pm-proxy
-vendor/bin/pm-service
 vendor/bin/port-bridge
 vendor/bin/qseecom_sample_client
 vendor/bin/qseecomd
@@ -501,7 +499,6 @@ vendor/lib/libnetmgr.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libois_lc898123f40.so
 vendor/lib/libpdmapper.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libpn553_fw.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqcmaputils.so
@@ -667,7 +664,6 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/liboemlock-provision.so
 vendor/lib64/liboemlock.so
 vendor/lib64/libpdmapper.so
-vendor/lib64/libperipheral_client.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqdi.so
@@ -761,3 +757,9 @@ vendor/radio/qcril_database/upgrade/9_remove_germany_ecc_110.sql
 vendor/radio/qcril_database/upgrade/10_israel_normal_ecc.sql
 # Necessary override to prevent issues
 vendor/lib/libhdrplusclient.so
+
+# Peripheral manager - from jasmine - V11.0.15.0.QDIMIXM
+vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
