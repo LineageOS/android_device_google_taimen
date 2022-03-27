@@ -46,6 +46,7 @@ vendor/bin/pd-mapper
 vendor/bin/pktlogconf
 vendor/bin/port-bridge
 vendor/bin/qseecom_sample_client
+vendor/bin/qseecomd
 vendor/bin/qseeproxydaemon
 vendor/bin/qseeproxysampledaemon
 vendor/bin/qti
@@ -404,6 +405,7 @@ vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libllvm-glnext.so
@@ -596,6 +598,7 @@ vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -640,6 +643,7 @@ vendor/lib64/libidl.so
 vendor/lib64/libizat_core.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libllvm-glnext.so
@@ -762,11 +766,3 @@ vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
 vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
 vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
-
-# DRM - from taimen QQ3A.200805.001
-vendor/bin/qseecomd|5e4cf745f5b8ef014889f5a901fcf3df0dedcc7b
-vendor/lib64/libStDrvInt.so|71167741ef9c61fdad055865122b2bd50f2cc54c
-
-# Keymaster - from taimen QQ3A.200805.001
-vendor/lib/libkeymasterutils.so|0f655ea391a1d93ca01f902b9d3c6db02523d2ea
-vendor/lib64/libkeymasterutils.so|2dbc7805c2b21ec5bc2e44a508de579029917c88
