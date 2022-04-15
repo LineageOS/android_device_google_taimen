@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.default_name=Pixel 2 XL
+
 # Kernel Modules Config
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg \
