@@ -5,7 +5,6 @@ vendor/app/ModemService/ModemService.apk
 vendor/app/QtiTelephonyService/QtiTelephonyService.apk
 vendor/app/TimeService/TimeService.apk
 vendor/app/wahoo_gfxdrv/wahoo_gfxdrv.apk;PRESIGNED
-vendor/bin/ATFWD-daemon
 vendor/bin/KmInstallKeybox
 vendor/bin/PktRspTest
 vendor/bin/StoreKeybox
@@ -713,7 +712,6 @@ vendor/lib64/libvoice-svc.so
 vendor/lib64/libwms.so
 vendor/lib64/libxml.so
 vendor/lib64/sensors.msm8998.so
-vendor/lib64/vendor.qti.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.qcril.am@1.0.so
 vendor/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn
 vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn
