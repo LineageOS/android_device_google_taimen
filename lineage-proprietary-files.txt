@@ -1,11 +1,11 @@
-### All blobs from this list, unless pinned and noted as otherwise,
+## All blobs from this list, unless pinned and noted as otherwise,
 ##  are from RP1A.201005.004.A1, Dec 2020.
 
+app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
 app/datastatusnotification/datastatusnotification.apk
 app/ims/ims.apk
 app/uceShimService/uceShimService.apk
 app/vzw_msdc_api/vzw_msdc_api.apk
-app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
 bin/move_widevine_data.sh
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
@@ -59,7 +59,6 @@ priv-app/CNEService/CNEService.apk
 priv-app/OemDmTrigger/OemDmTrigger.apk
 priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
-product/etc/ambient/matcher_tah.leveldb
 product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/apt_tw.pb
 product/etc/CarrierSettings/att5g_us.pb
@@ -160,6 +159,7 @@ product/etc/CarrierSettings/vodafone_it.pb
 product/etc/CarrierSettings/vodafone_nl.pb
 product/etc/CarrierSettings/vodafone_tr.pb
 product/etc/CarrierSettings/xfinity_us.pb
+product/etc/ambient/matcher_tah.leveldb
 product/etc/permissions/com.android.omadm.service.xml
 product/etc/permissions/com.android.sdm.plugins.connmo.xml
 product/etc/permissions/com.android.sdm.plugins.dcmo.xml
@@ -189,12 +189,12 @@ product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
-product/priv-app/DevicePersonalizationPrebuiltPixel2/DevicePersonalizationPrebuiltPixel2.apk;PRESIGNED
 product/priv-app/DMService/DMService.apk
+product/priv-app/DevicePersonalizationPrebuiltPixel2/DevicePersonalizationPrebuiltPixel2.apk;PRESIGNED
 product/priv-app/DiagMon/DiagMon.apk
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-product/priv-app/EuiccSupportPixel/esim0.img
 product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
+product/priv-app/EuiccSupportPixel/esim0.img
 product/priv-app/HardwareInfo/HardwareInfo.apk
 product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
