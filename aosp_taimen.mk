@@ -30,8 +30,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
 
-PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
-
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_taimen
