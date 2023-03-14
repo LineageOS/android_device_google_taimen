@@ -180,8 +180,6 @@ product/etc/sysconfig/whitelist_com.android.omadm.service.xml
 product/framework/libhwinfo.jar
 product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
-product/lib64/libaptXHD_encoder.so
-product/lib64/libaptX_encoder.so
 product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
 product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
