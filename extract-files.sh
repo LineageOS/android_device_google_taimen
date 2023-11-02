@@ -68,6 +68,10 @@ function blob_fixup() {
     vendor/bin/pm-service)
         grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
         ;;
+    # Fix missing symbol _ZN7android8hardware7details17gBnConstructorMapE
+    lib*/com.qualcomm.qti.imsrtpservice@1.0.so | vendor/bin/cnd | vendor/bin/ims_rtp_daemon | vendor/bin/imsrcsd)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
     esac
 }
 
