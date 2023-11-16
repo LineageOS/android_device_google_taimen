@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52d09ce5_1638d291",
+        "filename": "extract-files.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-16T23:09:00Z",
+      "side": 1,
+      "message": "lib*/com.qualcomm.qti.imsrtpservice@1.0.so",
+      "range": {
+        "startLine": 72,
+        "startChar": 4,
+        "endLine": 72,
+        "endChar": 91
+      },
+      "revId": "14892e7de72782c7aac8aeb84f2e41804de3a685",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
