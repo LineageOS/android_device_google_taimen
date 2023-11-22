@@ -189,9 +189,6 @@ product/priv-app/DCMO/DCMO.apk
 product/priv-app/DMService/DMService.apk
 product/priv-app/DevicePersonalizationPrebuiltPixel2/DevicePersonalizationPrebuiltPixel2.apk;PRESIGNED
 product/priv-app/DiagMon/DiagMon.apk
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
-product/priv-app/EuiccSupportPixel/esim0.img
 product/priv-app/HardwareInfo/HardwareInfo.apk
 product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
