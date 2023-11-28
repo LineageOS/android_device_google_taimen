@@ -1,5 +1,5 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
-##  are from RP1A.201005.004.A1, Dec 2020.
+## are from RP1A.201005.004.A1, Dec 2020.
 
 app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk
 app/datastatusnotification/datastatusnotification.apk
@@ -196,9 +196,9 @@ product/priv-app/EuiccSupportPixel/esim0.img
 product/priv-app/HardwareInfo/HardwareInfo.apk
 product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
+product/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so
 product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
-product/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 product/priv-app/OBDM_Permissions/OBDM_Permissions.apk;PRESIGNED
 product/priv-app/SprintDM/SprintDM.apk
 product/priv-app/SprintHM/SprintHM.apk
