@@ -1,0 +1,15 @@
+# Firmware - from RP1A.201005.004.A1, Dec 2020 - (factory image).
+
+abl.img;AB
+aes.img;AB
+cmnlib.img;AB
+cmnlib64.img;AB
+devcfg.img;AB
+hyp.img;AB
+keymaster.img;AB
+laf.img;AB
+modem.img;AB
+pmic.img;AB
+rpm.img;AB
+tz.img;AB
+xbl.img;AB
