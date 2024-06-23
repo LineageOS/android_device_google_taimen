@@ -35,8 +35,8 @@ lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
 lib/libdiag_system.so
 lib/libeaselcomm.so
-lib/libimscamera_jni.so
-lib/libimsmedia_jni.so
+lib/libimscamera_jni.so;SYMLINK=system/priv-app/ims/lib/arm/libimscamera_jni.so
+lib/libimsmedia_jni.so;SYMLINK=system/priv-app/ims/lib/arm/libimsmedia_jni.so
 lib/librcc.so
 lib/vendor.qti.qcril.am@1.0.so
 lib64/com.qualcomm.qti.ims.radio@1.0.so
