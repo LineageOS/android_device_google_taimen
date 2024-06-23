@@ -3,3 +3,10 @@ soong_namespace {
         "hardware/google/pixel",
     ],
 }
+
+install_symlink {
+    name: "firmware_tas2557_cal.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/tas2557_cal.bin",
+    symlink_target: "/persist/audio/tas2557_cal.bin",
+}
