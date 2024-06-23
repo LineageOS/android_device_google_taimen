@@ -50,8 +50,8 @@ lib64/libdiag_system.so
 lib64/libeaselcomm.so
 lib64/libfacenet.so
 lib64/libfrsdk.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
+lib64/libimscamera_jni.so;SYMLINK=app/ims/lib/arm64/libimscamera_jni.so
+lib64/libimsmedia_jni.so;SYMLINK=app/ims/lib/arm64/libimsmedia_jni.so
 lib64/librcc.so
 lib64/vendor.qti.qcril.am@1.0.so
 priv-app/CNEService/CNEService.apk
