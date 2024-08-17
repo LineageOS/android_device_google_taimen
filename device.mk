@@ -73,10 +73,6 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     device/google/taimen/thermal_info_config_evt.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_evt.json
 
-# Shims
-PRODUCT_PACKAGES += \
-    libgui_shim
-
 # Audio
 PRODUCT_COPY_FILES += \
     device/google/taimen/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_taimen.xml \
@@ -144,16 +140,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.tick.duration=4 \
   ro.vibrator.hal.heavyclick.duration=12
 
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libhidlbase-v32 \
-    libhidlbase-v32.vendor \
-    libutils-v33
-
 # CHRE
 $(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/taimen:libsdsprpc)
-
-# DRM
-PRODUCT_PACKAGES += \
-    libcrypto_shim.vendor
