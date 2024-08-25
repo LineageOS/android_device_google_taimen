@@ -691,7 +691,7 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-apis.so
 vendor/lib64/libsdmextension.so
--vendor/lib64/libsdsprpc.so
+vendor/lib64/libsdsprpc.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
@@ -752,7 +752,7 @@ vendor/radio/qcril_database/upgrade/8_germany_ecc_110.sql
 vendor/radio/qcril_database/upgrade/9_remove_germany_ecc_110.sql
 
 # Necessary override to prevent issues
--vendor/lib/libhdrplusclient.so
+vendor/lib/libhdrplusclient.so
 
 # Peripheral manager - from jasmine - V11.0.15.0.QDIMIXM
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
