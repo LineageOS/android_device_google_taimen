@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2023 The LineageOS Project
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -43,7 +43,8 @@ while [ "${#}" -gt 0 ]; do
                 KANG="--kang"
                 ;;
         -s | --section )
-                SECTION="${2}"; shift
+                SECTION="${2}"
+                shift
                 CLEAN_VENDOR=false
                 ;;
         * )
@@ -61,22 +62,35 @@ function blob_fixup() {
     case "${1}" in
     # Fix typo in qcrilmsgtunnel whitelist
     product/etc/sysconfig/nexus.xml)
+        [ "$2" = "" ] && return 0
         sed -i 's/qulacomm/qualcomm/' "${2}"
         ;;
     # Fix missing symbols for IMS/Camera
     lib/lib-imsvideocodec.so | lib/libimsmedia_jni.so | lib64/lib-imsvideocodec.so | lib64/libimsmedia_jni.so)
+        [ "$2" = "" ] && return 0
         for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
             "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
         done
         ;;
     vendor/bin/pm-service)
+        [ "$2" = "" ] && return 0
         grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
         ;;
     # Fix missing symbol _ZN7android8hardware7details17gBnConstructorMapE
     lib*/com.qualcomm.qti.imsrtpservice@1.0.so | vendor/bin/cnd | vendor/bin/ims_rtp_daemon | vendor/bin/imsrcsd | vendor/bin/netmgrd | vendor/lib*/com.quicinc.cne.api@1.0.so)
+        [ "$2" = "" ] && return 0
         "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         ;;
+    *)
+        return 1
+        ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 # Initialize the helper
