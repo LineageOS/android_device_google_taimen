@@ -74,8 +74,8 @@ vendor/etc/camera/camera_config.xml
 vendor/etc/camera/imx179_pixel_chromatix.xml
 vendor/etc/camera/imx362_pixel_chromatix.xml
 vendor/etc/chre/preloaded_nanoapps.json
-vendor/etc/data/dsi_config.xml
-vendor/etc/data/netmgr_config.xml
+vendor/etc/data/dsi_config.xml;FIX_XML
+vendor/etc/data/netmgr_config.xml;FIX_XML
 vendor/etc/flp.conf
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.2-service.fpc.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
