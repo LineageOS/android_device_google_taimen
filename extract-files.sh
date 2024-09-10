@@ -76,6 +76,10 @@ function blob_fixup() {
         [ "$2" = "" ] && return 0
         grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
         ;;
+    vendor/lib*/libwvhidl.so)
+         [ "$2" = "" ] && return 0
+         grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+         ;;
     # Fix missing symbol _ZN7android8hardware7details17gBnConstructorMapE
     lib*/com.qualcomm.qti.imsrtpservice@1.0.so | vendor/bin/cnd | vendor/bin/ims_rtp_daemon | vendor/bin/imsrcsd | vendor/bin/netmgrd | vendor/lib*/com.quicinc.cne.api@1.0.so)
         [ "$2" = "" ] && return 0
