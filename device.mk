@@ -151,4 +151,4 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    libcrypto_shim
+    libcrypto_shim.vendor
