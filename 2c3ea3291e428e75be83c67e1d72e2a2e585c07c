@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04322799_e01b7d10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-12-04T06:02:23Z",
+      "side": 1,
+      "message": "lrw-r--r-- 1 root root  30 2008-12-31 19:00 /vendor/firmware/tas2557_cal.bin -\u003e /persist/audio/tas2557_cal.bin",
+      "revId": "2c3ea3291e428e75be83c67e1d72e2a2e585c07c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
