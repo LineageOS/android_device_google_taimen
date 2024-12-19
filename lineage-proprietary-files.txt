@@ -170,7 +170,6 @@ product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
 product/etc/permissions/obdm_permissions.xml
 product/etc/permissions/privapp-permissions-google-p.xml
-product/etc/permissions/split-permissions-google.xml
 product/etc/permissions/vzw_mvs_permissions.xml
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 product/etc/sysconfig/nexus.xml
