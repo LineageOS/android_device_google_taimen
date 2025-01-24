@@ -75,6 +75,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libwvhidl.so',
     ): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    (
+        'vendor/lib/hw/vulkan.adreno.so',
+        'vendor/lib64/hw/vulkan.adreno.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
