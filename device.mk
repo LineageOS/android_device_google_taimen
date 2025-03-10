@@ -151,6 +151,9 @@ PRODUCT_PACKAGES += \
     libhidlbase-v32.vendor \
     libutils-v33
 
+# CHRE
+$(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/taimen:libsdsprpc)
+
 # DRM
 PRODUCT_PACKAGES += \
     libcrypto_shim.vendor
