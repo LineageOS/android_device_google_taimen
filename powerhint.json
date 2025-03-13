@@ -83,15 +83,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "50",
-        "10"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
