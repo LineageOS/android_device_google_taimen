@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/com.quicinc.cne.api@1.0.so',
     ): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
+    'product/lib64/libakuaf.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_product.so'),
     (
         'system/lib/lib-imsvt.so',
         'system/lib/libimsmedia_jni.so',
