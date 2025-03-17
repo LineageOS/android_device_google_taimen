@@ -47,8 +47,12 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/ims_rtp_daemon',
         'vendor/bin/imsrcsd',
         'vendor/bin/netmgrd',
+        'vendor/lib/com.qualcomm.qti.imsrtpservice@1.0_vendor.so',
         'vendor/lib/com.quicinc.cne.api@1.0.so',
+        'vendor/lib/com.quicinc.cne.server@1.0.so',
+        'vendor/lib64/com.qualcomm.qti.imsrtpservice@1.0_vendor.so',
         'vendor/lib64/com.quicinc.cne.api@1.0.so',
+        'vendor/lib64/com.quicinc.cne.server@1.0.so',
     ): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     'product/lib64/libakuaf.so': blob_fixup()
