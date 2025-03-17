@@ -1,6 +1,9 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
 ## are from RP1A.201005.004.A1, Dec 2020.
 
+# Current blobs with ELF checks disabled:
+# libtracking_af depends on unresolved symbol __page_size
+
 vendor/app/ModemService/ModemService.apk
 vendor/app/QtiTelephonyService/QtiTelephonyService.apk
 vendor/app/TimeService/TimeService.apk
@@ -541,7 +544,7 @@ vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libssd.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libtime_genoff.so
-vendor/lib/libtracking_af.so
+vendor/lib/libtracking_af.so;DISABLE_CHECKELF
 vendor/lib/libvoice-svc.so
 vendor/lib/libwms.so
 vendor/lib/libwvhidl.so
