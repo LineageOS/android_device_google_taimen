@@ -25,6 +25,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'hardware/qcom/gps/msm8998',
     'hardware/qcom/wlan/legacy',
 ]
 
