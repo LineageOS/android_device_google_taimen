@@ -74,6 +74,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libgui_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
         .add_needed('libutils-v33.so'),
+    'vendor/etc/chre/preloaded_nanoapps.json': blob_fixup()
+        .regex_replace('/vendor/lib/dsp', '/vendor/dsp/sdsp'),
     'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
