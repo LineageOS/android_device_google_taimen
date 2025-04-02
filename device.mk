@@ -29,7 +29,9 @@ PRODUCT_SOONG_NAMESPACES += device/google/taimen
 ifdef DEVICE_PACKAGE_OVERLAYS
 $(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PRODUCT_HARDWARE)' overlays)
 endif
-DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/google/taimen/overlay \
+    device/google/taimen/overlay-lineage
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -38,6 +40,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     device/google/taimen/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
+
+PRODUCT_COPY_FILES += \
+    device/google/taimen/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 include device/google/wahoo/device.mk
 

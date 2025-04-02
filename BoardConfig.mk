@@ -27,8 +27,6 @@ BOARD_AVB_ENABLE := true
 # sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
--include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
-
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
 
