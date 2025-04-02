@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/google/taimen
+
 TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
 
@@ -25,12 +27,12 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := true
 
 # sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
 
-BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/
+BOARD_LISA_TARGET_SCRIPTS := $(COMMON_PATH)/lisa
 
 # Rounded corners recovery UI. 105px = 30dp * 3.5 density, where 30dp comes from
 # rounded_corner_radius in overlay/frameworks/base/packages/SystemUI/res/values/dimens.xml.
