@@ -23,12 +23,6 @@ PRODUCT_HARDWARE := taimen
 # To build taimen specific modules e.g. librecovery_ui_taimen.
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# DEVICE_PACKAGE_OVERLAYS for the device should be before
-# including common overlays since the one listed first
-# takes precedence.
-ifdef DEVICE_PACKAGE_OVERLAYS
-$(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PRODUCT_HARDWARE)' overlays)
-endif
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
